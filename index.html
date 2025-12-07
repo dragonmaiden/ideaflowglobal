@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ideaflow — Performance Marketing Agency</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Source+Serif+4:ital,wght@0,400;0,500;0,600;1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <a href="#" class="logo">ideaflow</a>
+      <div class="nav-links" id="navLinks">
+        <a href="#services" data-en="Services" data-ko="서비스">Services</a>
+        <a href="#results" data-en="Results" data-ko="성과">Results</a>
+        <a href="#process" data-en="Process" data-ko="프로세스">Process</a>
+        <div class="lang-switch" onclick="toggleLanguage()">
+          <span class="lang-label lang-en">EN</span>
+          <div class="lang-toggle-track">
+            <div class="lang-toggle-thumb"></div>
+          </div>
+          <span class="lang-label lang-ko">KR</span>
+        </div>
+        <a href="#contact" class="btn btn-nav" data-en="Get in Touch" data-ko="문의하기">Get in Touch</a>
+      </div>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <div class="hero-eyebrow-line"></div>
+          <div class="hero-eyebrow-box"></div>
+          <span class="hero-eyebrow-text" data-en="Performance Marketing" data-ko="퍼포먼스 마케팅">Performance Marketing</span>
+        </div>
+       <h1>A <em class="creative-word">better</em><br>idea.</h1>
+        <p class="hero-description" data-en="We turn ad spend into measurable business growth. No fake engagement—just real results backed by Meta expertise." data-ko="광고비를 실질적인 비즈니스 성장으로 전환합니다. 가짜 참여가 아닌, 메타 전문성을 바탕으로 한 진짜 성과만을 약속합니다.">
+          We turn ad spend into measurable business growth. No fake engagement—just real results backed by Meta expertise.
+        </p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn" data-en="Start a Project →" data-ko="프로젝트 시작하기 →">Start a Project →</a>
+          <a href="#results" class="btn btn-outline" data-en="View Results" data-ko="성과 보기">View Results</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat">
+          <div class="stat-value" data-en="$9M+" data-ko="120억+">$9M+</div>
+          <div class="stat-label" data-en="Ad Spend Managed" data-ko="광고비 운영 규모">Ad Spend Managed</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">180+</div>
+          <div class="stat-label" data-en="Accounts / Quarter" data-ko="분기별 광고 계정">Accounts / Quarter</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">500+</div>
+          <div class="stat-label" data-en="Consultations" data-ko="컨설팅 진행">Consultations</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">55%</div>
+          <div class="stat-label" data-en="Lower CPA" data-ko="CPA 절감">Lower CPA</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-rule">
+
+  <section class="founder" id="about">
+    <div class="container">
+      <div class="founder-grid">
+        <div class="founder-image-wrapper">
+          <img src="founder.png" alt="Park Yurim">
+        </div>
+        <div class="founder-content">
+          <div class="section-label" data-en="Founder" data-ko="대표 소개">Founder</div>
+          <h2 class="font-display" data-en="Park Yurim" data-ko="박유림">Park Yurim</h2>
+          <p class="founder-role" data-en="CEO, Ideaflow Marketing Agency" data-ko="CEO, 아이디어플로우 마케팅 에이전시">CEO, Ideaflow Marketing Agency</p>
+          <p class="founder-bio" data-en="With hands-on experience at Meta Singapore as a Facebook Account Specialist, I bring insider knowledge that most agencies simply don't have. No hearsay marketing tactics—only strategies learned directly from Meta's Product Scientists and internal training." data-ko="메타 싱가포르에서 Facebook Account Specialist로 근무한 경험을 바탕으로, 대부분의 에이전시가 갖추지 못한 내부 노하우를 보유하고 있습니다. 카더라 마케팅이 아닌, 메타의 Product Scientist와 내부 교육에서 직접 배운 전략만을 사용합니다.">
+            With hands-on experience at Meta Singapore as a Facebook Account Specialist, 
+            I bring insider knowledge that most agencies simply don't have. No hearsay marketing tactics—only strategies learned directly from Meta's Product Scientists and internal training.
+          </p>
+          <div class="founder-credentials">
+            <div class="credential" data-en="Former Facebook Account Specialist, Meta Singapore" data-ko="전 Facebook Account Specialist, Meta Singapore">Former Facebook Account Specialist, Meta Singapore</div>
+            <div class="credential" data-en="Managed 150–180 ad accounts quarterly" data-ko="분기당 150–180개 광고 계정 관리">Managed 150–180 ad accounts quarterly</div>
+            <div class="credential" data-en="$9M+ in ad spend analyzed and optimized" data-ko="120억원 이상의 광고비 분석 및 최적화">$9M+ in ad spend analyzed and optimized</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-rule">
+
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <div class="section-label" data-en="Services" data-ko="서비스">Services</div>
+          <h2 class="font-display" data-en="Performance marketing that delivers" data-ko="성과를 만드는 퍼포먼스 마케팅">Performance marketing that delivers</h2>
+        </div>
+        <p class="section-description" data-en="Strategic Meta campaigns through Ads Manager. We analyze spend vs. results and optimize for genuine business growth." data-ko="메타 광고 관리자를 통한 전략적 캠페인 운영. 광고비 대비 성과를 분석하고 진정한 비즈니스 성장을 위해 최적화합니다.">
+          Strategic Meta campaigns through Ads Manager. We analyze spend vs. results and optimize for genuine business growth.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-number">001</div>
+          <h3 data-en="Performance Ads" data-ko="퍼포먼스 광고">Performance Ads</h3>
+          <p data-en="Strategic Meta campaigns through Ads Manager. We analyze spend vs. results and optimize for genuine business growth—not vanity metrics." data-ko="메타 광고 관리자를 통한 전략적 캠페인 운영. 허수 지표가 아닌, 광고비 대비 성과를 분석하고 실질적인 비즈니스 성장을 위해 최적화합니다.">Strategic Meta campaigns through Ads Manager. We analyze spend vs. results and optimize for genuine business growth—not vanity metrics.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-number">002</div>
+          <h3 data-en="Creative Strategy" data-ko="크리에이티브 전략">Creative Strategy</h3>
+          <p data-en="Scroll-stopping creative that converts. We develop diverse creatives based on concept and format to maximize campaign performance." data-ko="스크롤을 멈추게 하는 전환 크리에이티브. 컨셉과 포맷을 기반으로 다양한 크리에이티브를 개발하여 캠페인 성과를 극대화합니다.">Scroll-stopping creative that converts. We develop diverse creatives based on concept and format to maximize campaign performance.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-number">003</div>
+          <h3 data-en="Campaign Optimization" data-ko="캠페인 최적화">Campaign Optimization</h3>
+          <p data-en="Machine learning-driven optimization. We leverage Advantage+ shopping campaigns and catalog ads for efficient retargeting." data-ko="머신러닝 기반 최적화. Advantage+ 쇼핑 캠페인과 카탈로그 광고를 활용하여 효율적인 리타겟팅을 진행합니다.">Machine learning-driven optimization. We leverage Advantage+ shopping campaigns and catalog ads for efficient retargeting.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-rule">
+
+  <section class="why-meta">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <div class="section-label" data-en="Why Meta" data-ko="왜 메타인가">Why Meta</div>
+          <h2 class="font-display" data-en="Where purchase decisions happen" data-ko="구매 결정이 이루어지는 곳">Where purchase decisions happen</h2>
+        </div>
+        <p class="section-description" data-en="Facebook, Instagram, Messenger, WhatsApp—reach new and existing customers where they already spend their time." data-ko="페이스북, 인스타그램, 메신저, 왓츠앱 — 고객이 이미 시간을 보내는 곳에서 신규 및 기존 고객에게 도달하세요.">
+          Facebook, Instagram, Messenger, WhatsApp—reach new and existing customers where they already spend their time.
+        </p>
+      </div>
+
+      <div class="meta-stats">
+        <div class="meta-stat">
+          <div class="meta-stat-value">77%</div>
+          <div class="meta-stat-label" data-en="of shoppers say Meta influenced their purchase decisions during major sales" data-ko="쇼핑객의 77%가 주요 세일 기간 동안 메타가 구매 결정에 영향을 미쳤다고 응답">of shoppers say Meta influenced their purchase decisions during major sales</div>
+        </div>
+        <div class="meta-stat">
+          <div class="meta-stat-value">48.6%</div>
+          <div class="meta-stat-label" data-en="of social media users primarily use Instagram—1 in 2 people" data-ko="소셜 미디어 사용자의 절반이 인스타그램을 주로 사용 — 2명 중 1명">of social media users primarily use Instagram—1 in 2 people</div>
+        </div>
+        <div class="meta-stat">
+          <div class="meta-stat-value" data-en="23.4M" data-ko="2,340만">23.4M</div>
+          <div class="meta-stat-label" data-en="Instagram users in Korea—45.2% of the total population" data-ko="한국 인스타그램 사용자 수 — 전체 인구의 45.2%">Instagram users in Korea—45.2% of the total population</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-rule">
+
+  <section class="results" id="results">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <div class="section-label" data-en="Results" data-ko="성과">Results</div>
+          <h2 class="font-display" data-en="Real performance, documented" data-ko="문서화된 실제 성과">Real performance, documented</h2>
+        </div>
+        <p class="section-description" data-en="We don't promise fake followers or vanity metrics. Every result here is from real campaigns with real businesses." data-ko="가짜 팔로워나 허수 지표를 약속하지 않습니다. 여기 있는 모든 성과는 실제 비즈니스와의 실제 캠페인 결과입니다.">
+          We don't promise fake followers or vanity metrics. Every result here is from real campaigns with real businesses.
+        </p>
+      </div>
+
+      <div class="results-grid">
+        <div class="result-card featured">
+          <div class="result-label" data-en="Head-to-Head Comparison" data-ko="직접 비교">Head-to-Head Comparison</div>
+          <div class="result-title" data-en="Ideaflow vs. Competitor Agency" data-ko="아이디어플로우 vs. 경쟁 에이전시">Ideaflow vs. Competitor Agency</div>
+          <div class="result-description" data-en="Same business, same period, direct A/B test between agencies" data-ko="동일 업체, 동일 기간, 에이전시 간 직접 A/B 테스트">Same business, same period, direct A/B test between agencies</div>
+          <div class="result-comparison">
+            <div class="comparison-item">
+              <div class="comparison-label" data-en="Competitor CPA" data-ko="경쟁사 CPA">Competitor CPA</div>
+              <div class="comparison-value before">₩26,949</div>
+            </div>
+            <div class="comparison-item">
+              <div class="comparison-label" data-en="Ideaflow CPA" data-ko="아이디어플로우 CPA">Ideaflow CPA</div>
+              <div class="comparison-value">₩12,189</div>
+            </div>
+            <div class="comparison-item">
+              <div class="comparison-label" data-en="Cost Savings" data-ko="비용 절감">Cost Savings</div>
+              <div class="comparison-value">55%</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="result-card">
+          <div class="result-label" data-en="Campaign Optimization" data-ko="캠페인 최적화">Campaign Optimization</div>
+          <div class="result-metric">84%</div>
+          <div class="result-title" data-en="Cost Per Result Reduction" data-ko="결과당 비용 절감">Cost Per Result Reduction</div>
+          <div class="result-description" data-en="From ₩66,633 to ₩10,161 after optimization" data-ko="최적화 후 ₩66,633에서 ₩10,161로 감소">From ₩66,633 to ₩10,161 after optimization</div>
+        </div>
+
+        <div class="result-card">
+          <div class="result-label" data-en="E-commerce Launch" data-ko="이커머스 런칭">E-commerce Launch</div>
+          <div class="result-metric">7.99×</div>
+          <div class="result-title" data-en="ROAS on First Campaign" data-ko="첫 캠페인 ROAS">ROAS on First Campaign</div>
+          <div class="result-description" data-en="New online shopping mall, October 2024" data-ko="신규 온라인 쇼핑몰, 2024년 10월">New online shopping mall, October 2024</div>
+        </div>
+
+        <div class="result-card">
+          <div class="result-label" data-en="Women's Accessories" data-ko="여성 액세서리">Women's Accessories</div>
+          <div class="result-metric">147%</div>
+          <div class="result-title" data-en="ROAS Increase" data-ko="ROAS 증가">ROAS Increase</div>
+          <div class="result-description" data-en="Within 2 weeks of launch, April 2025" data-ko="런칭 2주 만에 달성, 2025년 4월">Within 2 weeks of launch, April 2025</div>
+        </div>
+
+        <div class="result-card">
+          <div class="result-label" data-en="Children's Brand" data-ko="아동 브랜드">Children's Brand</div>
+          <div class="result-metric">5.97×</div>
+          <div class="result-title" data-en="Average ROAS" data-ko="평균 ROAS">Average ROAS</div>
+          <div class="result-description" data-en="Children's Day campaign, first-time advertiser" data-ko="어린이날 캠페인, 첫 광고 집행 광고주">Children's Day campaign, first-time advertiser</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="clients">
+    <div class="container">
+      <p class="clients-label" data-en="Trusted By" data-ko="신뢰하는 파트너">Trusted By</p>
+      <div class="clients-logos">
+        <div class="client-logo">
+          <img src="logos/nice-investors.png" alt="NICE Investors" onerror="this.onerror=null; this.src='logos/nice-investors.svg'; this.onerror=function(){this.style.display='none'; this.nextElementSibling.style.display='block';};">
+          <span style="display:none;">NICE Investors</span>
+        </div>
+        <div class="client-logo">
+          <img src="logos/gobiz.png" alt="Gobiz Korea" onerror="this.onerror=null; this.src='logos/gobiz-korea.svg'; this.onerror=function(){this.style.display='none'; this.nextElementSibling.style.display='block';};">
+          <span style="display:none;">Gobiz Korea</span>
+        </div>
+        <div class="client-logo">
+          <img src="logos/kosme.png" alt="KOSME" onerror="this.onerror=null; this.src='logos/kosme.svg'; this.onerror=function(){this.style.display='none'; this.nextElementSibling.style.display='block';};">
+          <span style="display:none;">KOSME</span>
+        </div>
+        <div class="client-logo">
+          <img src="logos/kyobo.png" alt="Kyobo" onerror="this.onerror=null; this.src='logos/kyobo.svg'; this.onerror=function(){this.style.display='none'; this.nextElementSibling.style.display='block';};">
+          <span style="display:none;">Kyobo</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="process" id="process">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <div class="section-label" data-en="Process" data-ko="프로세스">Process</div>
+          <h2 class="font-display" data-en="From brief to results" data-ko="브리프에서 성과까지">From brief to results</h2>
+        </div>
+        <p class="section-description" data-en="We move fast. Most campaigns are live within weeks, not months." data-ko="빠르게 움직입니다. 대부분의 캠페인은 몇 달이 아닌 몇 주 안에 라이브됩니다.">
+          We move fast. Most campaigns are live within weeks, not months.
+        </p>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-step">
+          <div class="step-number">001</div>
+          <h3 data-en="Discovery" data-ko="분석">Discovery</h3>
+          <p data-en="Define machine learning plan, identify key business questions, test hypotheses." data-ko="머신러닝 플랜 정의, 핵심 비즈니스 질문 식별, 가설 테스트.">Define machine learning plan, identify key business questions, test hypotheses.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">002</div>
+          <h3 data-en="Creative" data-ko="크리에이티브">Creative</h3>
+          <p data-en="Produce diverse creatives based on concept and format to maximize testing." data-ko="테스팅을 극대화하기 위해 컨셉과 포맷 기반의 다양한 크리에이티브 제작.">Produce diverse creatives based on concept and format to maximize testing.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">003</div>
+          <h3 data-en="Launch" data-ko="런칭">Launch</h3>
+          <p data-en="Deploy Advantage+ campaigns, minimize changes during learning phase." data-ko="Advantage+ 캠페인 배포, 학습 단계에서 변경 최소화.">Deploy Advantage+ campaigns, minimize changes during learning phase.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">004</div>
+          <h3 data-en="Scale" data-ko="스케일">Scale</h3>
+          <p data-en="Leverage catalog ads for retargeting, match products to churned customers." data-ko="리타겟팅을 위한 카탈로그 광고 활용, 이탈 고객에게 상품 매칭.">Leverage catalog ads for retargeting, match products to churned customers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="contact">
+    <div class="container">
+      <div class="section-label" style="justify-content: center; color: rgba(255,255,255,0.5);" data-en="Contact" data-ko="문의">Contact</div>
+      <h2 class="font-display" data-en="Let's build your&lt;br&gt;next campaign" data-ko="다음 캠페인을&lt;br&gt;함께 만들어요">Let's build your<br>next campaign</h2>
+      <p data-en="No fake followers. No vanity metrics. Just real business growth." data-ko="가짜 팔로워 없이. 허수 지표 없이. 오직 실질적인 비즈니스 성장만.">No fake followers. No vanity metrics. Just real business growth.</p>
+      
+      <a href="mailto:contact@ideaflow.com" class="btn" data-en="Get in Touch →" data-ko="문의하기 →">Get in Touch →</a>
+      
+      <div class="contact-info">
+        <div class="contact-item">
+          <a href="mailto:contact@ideaflow.com">contact@ideaflow.com</a>
+        </div>
+        <div class="contact-item">
+          <a href="tel:+821099603456">+82 10 9960 3456</a>
+        </div>
+        <div class="contact-item">
+          <a href="https://instagram.com/ideaflow_mkt" target="_blank">@ideaflow_mkt</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="https://instagram.com/ideaflow_mkt" target="_blank">Instagram</a>
+        
+        <a href="mailto:contact@ideaflow.com">Email</a>
+      </div>
+      <div class="copyright">© 2025 Ideaflow</div>
+    </div>
+  </footer>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    let currentLang = localStorage.getItem('lang') || 'en';
+    
+    function setLanguage(lang) {
+      currentLang = lang;
+      localStorage.setItem('lang', lang);
+      
+      // Update all elements with data-en and data-ko attributes
+      document.querySelectorAll('[data-en][data-ko]').forEach(el => {
+        const text = el.getAttribute('data-' + lang);
+        if (text) {
+          if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+            el.placeholder = text;
+          } else {
+            el.innerHTML = text;
+          }
+        }
+      });
+      
+      // Update toggle switch position
+      const langSwitch = document.querySelector('.lang-switch');
+      if (langSwitch) {
+        if (lang === 'ko') {
+          langSwitch.classList.add('ko');
+        } else {
+          langSwitch.classList.remove('ko');
+        }
+      }
+      
+      // Update html lang attribute
+      document.documentElement.lang = lang === 'en' ? 'en' : 'ko';
+    }
+    
+    function toggleLanguage() {
+      setLanguage(currentLang === 'en' ? 'ko' : 'en');
+    }
+    
+    function toggleMobileMenu() {
+      const navLinks = document.getElementById('navLinks');
+      const menuBtn = document.getElementById('mobileMenuBtn');
+      navLinks.classList.toggle('open');
+      menuBtn.classList.toggle('open');
+    }
+    
+    // Close mobile menu when clicking a link
+    document.addEventListener('DOMContentLoaded', function() {
+      setLanguage(currentLang);
+      
+      document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+          const navLinks = document.getElementById('navLinks');
+          const menuBtn = document.getElementById('mobileMenuBtn');
+          navLinks.classList.remove('open');
+          menuBtn.classList.remove('open');
+        });
+      });
+
+      // Scroll reveal animation
+      const revealElements = document.querySelectorAll('.service-card, .result-card, .process-step, .meta-stat, .founder-grid, .section-header');
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+          }
+        });
+      }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      });
+
+      revealElements.forEach(el => {
+        el.classList.add('reveal');
+        revealObserver.observe(el);
+      });
+
+      // Nav scroll effect
+      const nav = document.querySelector('nav');
+      let lastScroll = 0;
+      window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+        if (currentScroll > 50) {
+          nav.classList.add('scrolled');
+        } else {
+          nav.classList.remove('scrolled');
+        }
+        lastScroll = currentScroll;
+      });
+    });
+  </script>
+</body>
+</html>
