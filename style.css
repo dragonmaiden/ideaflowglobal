@@ -47,6 +47,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+p, span, div, h3, h4, h5, h6 {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+/* Headers: Prevent word splitting */
+h1, h2, .section-title {
+  overflow-wrap: normal;
+  word-break: keep-all;
+  word-wrap: normal;
 }
 
 html {
@@ -113,6 +128,37 @@ header .container {
   font-weight: 900;
   color: var(--dark-text);
   letter-spacing: -0.02em;
+}
+
+.mobile-menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  z-index: 101;
+}
+
+.mobile-menu-toggle span {
+  width: 24px;
+  height: 2px;
+  background: var(--dark-text);
+  transition: all 0.3s;
+  border-radius: 2px;
+}
+
+.mobile-menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 8px);
+}
+
+.mobile-menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
 }
 
 nav {
@@ -262,11 +308,21 @@ nav {
 }
 
 .hero h1 {
-  font-size: clamp(32px, 12vw, 72px);
+  font-size: clamp(2rem, 5vw + 1rem, 4.5rem);
   font-weight: 900;
-  line-height: 1.25;
+  line-height: 1.1;
   color: var(--dark-text);
   margin-bottom: clamp(16px, 4vw, 24px);
+  text-wrap: balance;
+  overflow-wrap: normal;
+  word-break: keep-all;
+  word-wrap: normal;
+}
+
+@media (min-width: 768px) {
+  .hero h1 {
+    line-height: 1.25;
+  }
 }
 
 .hero h1 .highlight {
@@ -413,11 +469,20 @@ nav {
 }
 
 .section-title {
-  font-size: 48px;
+  font-size: clamp(1.75rem, 4vw + 1rem, 3rem);
   font-weight: 400;
-  line-height: 1; 
+  line-height: 1.2;
   color: var(--dark-text);
   margin-bottom: 16px;
+  overflow-wrap: normal;
+  word-break: keep-all;
+  word-wrap: normal;
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    line-height: 1;
+  }
 }
 
 .section-description {
@@ -474,24 +539,31 @@ nav {
 }
 
 .credibility-label {
-  font-size: 14px;
+  font-size: clamp(13px, 3vw, 14px);
   font-weight: 400;
   color: var(--light-muted);
   margin-bottom: 8px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .credibility-value {
-  font-size: 18px;
+  font-size: clamp(16px, 4vw, 18px);
   font-weight: 400;
   line-height: 1.56;
   color: var(--dark-text);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .credibility-stats {
   background: var(--gradient-light);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-16);
-  padding: 49px;
+  padding: clamp(32px, 8vw, 49px);
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .credibility-stats-grid {
@@ -512,20 +584,28 @@ nav {
   text-align: center;
   width: 100%;
   box-sizing: border-box;
+  padding: clamp(8px, 2vw, 12px);
+  min-width: 0;
+  overflow: hidden;
 }
 
 .credibility-stat-value {
-  font-size: 48px;
+  font-size: clamp(32px, 8vw, 48px);
   font-weight: 900;
   line-height: 1;
   color: var(--dark);
   margin-bottom: 8px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .credibility-stat-label {
-  font-size: 16px;
+  font-size: clamp(14px, 3.5vw, 16px);
   font-weight: 500;
   color: var(--muted-text);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 /* Trusted Clients */
@@ -600,9 +680,18 @@ nav {
 .service-card h3 {
   font-size: clamp(20px, 5vw, 24px);
   font-weight: 700;
-  line-height: 1.33;
+  line-height: 1.2;
   color: var(--dark-text);
   margin-bottom: clamp(12px, 3vw, 16px);
+  overflow-wrap: normal;
+  word-break: keep-all;
+  word-wrap: normal;
+}
+
+@media (min-width: 768px) {
+  .service-card h3 {
+    line-height: 1.33;
+  }
 }
 
 .service-card p {
@@ -724,6 +813,10 @@ nav {
   font-weight: 700;
   color: var(--dark-text);
   margin-bottom: clamp(12px, 3vw, 16px);
+  overflow-wrap: normal;
+  word-break: keep-all;
+  word-wrap: normal;
+  line-height: 1.2;
 }
 
 .process-step p {
@@ -733,17 +826,6 @@ nav {
 }
 
 .process-connector {
-  position: absolute;
-  top: 96px;
-  right: -12px;
-  width: 24px;
-  height: 24px;
-  background: var(--white);
-  border: 2px solid var(--border-light);
-  border-radius: 50%;
-}
-
-.process-step:last-child .process-connector {
   display: none;
 }
 
@@ -1250,8 +1332,47 @@ nav {
     box-sizing: border-box;
   }
   
-  nav {
-    display: none;
+  .mobile-menu-toggle {
+    display: flex;
+  }
+  
+  nav.nav-menu {
+    position: fixed;
+    top: 81px;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: clamp(24px, 6vw, 32px) clamp(16px, 4vw, 24px);
+    gap: clamp(20px, 5vw, 24px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 100;
+    max-height: calc(100vh - 81px);
+    overflow-y: auto;
+  }
+  
+  nav.nav-menu.active {
+    transform: translateX(0);
+  }
+  
+  nav .nav-link {
+    font-size: clamp(16px, 4vw, 18px);
+    width: 100%;
+    padding: 12px 0;
+  }
+  
+  nav .lang-toggle-wrapper {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  
+  nav .btn-primary {
+    width: 100%;
+    text-align: center;
   }
   
   header {
@@ -1300,13 +1421,23 @@ nav {
     margin: 0;
   }
   
+  .credibility-stats {
+    padding: clamp(24px, 6vw, 32px);
+  }
+  
   .credibility-stats-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: clamp(16px, 4vw, 24px);
+    gap: clamp(12px, 3vw, 16px);
   }
   
   .credibility-stat {
     width: 100%;
+    min-width: 0;
+    padding: clamp(8px, 2vw, 12px);
+  }
+  
+  .credibility-stat-value {
+    font-size: clamp(28px, 7vw, 36px);
   }
   
   .services-grid,

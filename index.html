@@ -16,7 +16,12 @@
   <header>
     <div class="container">
       <a href="#" class="logo">idea flow</a>
-      <nav>
+      <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-menu">
         <a href="#services" class="nav-link" data-en="Services" data-ko="서비스">Services</a>
         <a href="#case-studies" class="nav-link" data-en="Case Studies" data-ko="사례 연구">Case Studies</a>
         <a href="#contact" class="nav-link" data-en="Contact" data-ko="문의하기">Contact</a>
@@ -311,7 +316,6 @@
           </div>
           <h3 data-en="Discovery" data-ko="발견">Discovery</h3>
           <p data-en="Define machine learning plan, identify key business questions, test hypotheses." data-ko="머신러닝 계획 수립, 핵심 비즈니스 질문 식별, 가설 테스트">Define machine learning plan, identify key business questions, test hypotheses.</p>
-          <div class="process-connector"></div>
         </div>
         <div class="process-step">
           <div class="process-step-number">
@@ -327,10 +331,9 @@
                 <circle cx="18" cy="17" r="1.5" fill="#F59E0B"/>
               </svg>
             </div>
-          </div>
+      </div>
           <h3 data-en="Creative" data-ko="크리에이티브">Creative</h3>
           <p data-en="Produce diverse creatives based on concept and format to maximize testing." data-ko="테스트를 극대화하기 위해 컨셉과 형식에 기반한 다양한 크리에이티브 제작">Produce diverse creatives based on concept and format to maximize testing.</p>
-          <div class="process-connector"></div>
         </div>
         <div class="process-step">
           <div class="process-step-number">
@@ -348,7 +351,6 @@
           </div>
           <h3 data-en="Launch" data-ko="런칭">Launch</h3>
           <p data-en="Deploy Advantage+ campaigns, minimize changes during learning phase." data-ko="Advantage+ 캠페인 배포, 학습 단계 중 변경 최소화">Deploy Advantage+ campaigns, minimize changes during learning phase.</p>
-          <div class="process-connector"></div>
         </div>
         <div class="process-step">
           <div class="process-step-number">
@@ -785,6 +787,30 @@
   </footer>
 
   <script>
+    // Mobile menu toggle
+    function toggleMobileMenu() {
+      const nav = document.querySelector('.nav-menu');
+      const toggle = document.querySelector('.mobile-menu-toggle');
+      if (nav && toggle) {
+        nav.classList.toggle('active');
+        toggle.classList.toggle('active');
+      }
+    }
+    
+    // Close mobile menu when clicking on a link
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.nav-link, .btn-primary').forEach(link => {
+        link.addEventListener('click', () => {
+          const nav = document.querySelector('.nav-menu');
+          const toggle = document.querySelector('.mobile-menu-toggle');
+          if (nav && toggle) {
+            nav.classList.remove('active');
+            toggle.classList.remove('active');
+          }
+        });
+      });
+    });
+    
     // Language toggle functionality
     let currentLang = localStorage.getItem('lang') || 'en';
     
@@ -820,7 +846,7 @@
             if (placeholderAttr) {
               el.placeholder = placeholderAttr;
             } else {
-              el.placeholder = text;
+            el.placeholder = text;
             }
           } else if (el.tagName === 'OPTION') {
             el.textContent = text;
