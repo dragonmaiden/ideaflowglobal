@@ -3,339 +3,826 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ideaflow — Performance Marketing Agency</title>
+  <title>Ideaflow — Meta-Certified Performance Marketing Agency</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Playfair+Display:wght@400&family=Source+Serif+4:wght@400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&family=Inter:wght@400&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
+  <!-- Header -->
+  <header>
     <div class="container">
-      <a href="#" class="logo">ideaflow</a>
-      <div class="nav-links" id="navLinks">
-        <a href="#services" data-en="Services" data-ko="서비스">Services</a>
-        <a href="#results" data-en="Results" data-ko="성과">Results</a>
-        <a href="#process" data-en="Process" data-ko="프로세스">Process</a>
-        <div class="lang-switch" onclick="toggleLanguage()">
-          <span class="lang-label lang-en">EN</span>
-          <div class="lang-toggle-track">
-            <div class="lang-toggle-thumb"></div>
-          </div>
-          <span class="lang-label lang-ko">KR</span>
+      <a href="#" class="logo">idea flow</a>
+      <nav>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#case-studies" class="nav-link">Case Studies</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <div class="lang-toggle" onclick="toggleLanguage()">
+          <svg class="globe-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="9" cy="9" r="7.5" stroke="#364153" stroke-width="1.5"/>
+            <ellipse cx="9" cy="9" rx="7.5" ry="2.5" stroke="#364153" stroke-width="1.5"/>
+            <ellipse cx="9" cy="9" rx="2.5" ry="7.5" stroke="#364153" stroke-width="1.5"/>
+            <line x1="9" y1="1.5" x2="9" y2="16.5" stroke="#364153" stroke-width="1.5"/>
+          </svg>
+          <span class="lang-text">EN</span>
         </div>
-        <a href="#contact" class="btn btn-nav" data-en="Book a call" data-ko="상담 예약">Book a call</a>
-      </div>
-      <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMobileMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+        <a href="#contact" class="btn-primary">Book a Call</a>
+      </nav>
     </div>
-  </nav>
+  </header>
 
+  <!-- Hero Section -->
   <section class="hero">
     <div class="container">
-      <div class="hero-content">
-        <div class="hero-eyebrow">
-          <div class="hero-eyebrow-line"></div>
-          <div class="hero-eyebrow-box"></div>
-          <span class="hero-eyebrow-text" data-en="Performance Marketing" data-ko="퍼포먼스 마케팅">Performance Marketing</span>
-        </div>
-       <h1>A <em class="creative-word">better</em><br>idea.</h1>
-        <p class="hero-description" data-en="We turn ad spend into measurable business growth. No fake engagement—just real results backed by Meta expertise." data-ko="광고비를 실질적인 비즈니스 성장으로 전환합니다. 가짜 참여가 아닌, 메타 전문성을 바탕으로 한 진짜 성과만을 약속합니다.">
-          We turn ad spend into measurable business growth. No fake engagement—just real results backed by Meta expertise.
+      <div>
+        <div class="hero-badge">Meta Business Partner</div>
+        <h1>
+          What you need is a<br>
+          <span class="highlight">Better</span> idea.
+        </h1>
+        <p class="hero-description">
+          Transform your social media advertising with data-driven strategies that deliver measurable results. We optimize every dollar of your ad spend.
         </p>
+        <div class="hero-features">
+          <div class="hero-feature">
+            <div class="hero-feature-icon">✓</div>
+            <span>Meta-Certified Marketing Partner</span>
+          </div>
+          <div class="hero-feature">
+            <div class="hero-feature-icon">✓</div>
+            <span>Data-Driven Campaign Optimization</span>
+          </div>
+          <div class="hero-feature">
+            <div class="hero-feature-icon">✓</div>
+            <span>ROI-Focused Performance Marketing</span>
+          </div>
+        </div>
         <div class="hero-cta">
-          <a href="#contact" class="btn" data-en="Book a call →" data-ko="상담 예약 →">Book a call →</a>
-          <a href="#results" class="btn btn-outline" data-en="View Results" data-ko="성과 보기">View Results</a>
+          <a href="#contact" class="btn-primary">Book a Free Call</a>
+          <a href="#case-studies" class="btn-secondary">View Case Studies</a>
         </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <img src="landingphoto.png" alt="Meta Ad Examples" class="hero-image" width="500" height="500">
       </div>
     </div>
   </section>
 
-  <section class="stats">
+  <!-- Credibility Section -->
+  <section class="credibility section">
     <div class="container">
-      <div class="stats-grid">
-        <div class="stat">
-          <div class="stat-value" data-en="$9M+" data-ko="120억+">$9M+</div>
-          <div class="stat-label" data-en="Ad Spend Managed" data-ko="광고비 운영 규모">Ad Spend Managed</div>
+      <div class="section-header">
+        <h2 class="section-title">Proven Expertise in Meta Advertising</h2>
+        <p class="section-description">
+          Backed by Meta certification and years of experience managing high-performance campaigns for global brands
+        </p>
+      </div>
+      
+      <div class="credibility-cards">
+        <div class="credibility-card">
+          <div class="credibility-icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 2L16.5 10.5L25 13L16.5 15.5L14 24L11.5 15.5L3 13L11.5 10.5L14 2Z" stroke="white" stroke-width="2.33" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="14" cy="13" r="3" stroke="white" stroke-width="2.33"/>
+            </svg>
+          </div>
+          <div class="credibility-label">Meta Certification</div>
+          <div class="credibility-value">Official Meta Business Partner</div>
         </div>
-        <div class="stat">
-          <div class="stat-value">180+</div>
-          <div class="stat-label" data-en="Accounts / Quarter" data-ko="분기별 광고 계정">Accounts / Quarter</div>
+        <div class="credibility-card">
+          <div class="credibility-icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="9" cy="7" r="3.5" stroke="white" stroke-width="2.33"/>
+              <circle cx="19" cy="7" r="3.5" stroke="white" stroke-width="2.33"/>
+              <path d="M3 21C3 17 5.5 14.5 9 14.5C9.5 14.5 10 14.6 10.5 14.7" stroke="white" stroke-width="2.33" stroke-linecap="round"/>
+              <path d="M25 21C25 17 22.5 14.5 19 14.5C18.5 14.5 18 14.6 17.5 14.7" stroke="white" stroke-width="2.33" stroke-linecap="round"/>
+              <path d="M14 21C14 17.5 11.5 15.5 8.5 15.5" stroke="white" stroke-width="2.33" stroke-linecap="round"/>
+              <path d="M14 21C14 17.5 16.5 15.5 19.5 15.5" stroke="white" stroke-width="2.33" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="credibility-label">Experience</div>
+          <div class="credibility-value">Ex-Facebook/Meta Specialist, Singapore</div>
         </div>
-        <div class="stat">
-          <div class="stat-value">500+</div>
-          <div class="stat-label" data-en="Consultations" data-ko="컨설팅 진행">Consultations</div>
+        <div class="credibility-card">
+          <div class="credibility-icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.33 18.67L7 14L11.67 16.33L18.67 8.17L25.67 18.67" stroke="white" stroke-width="2.33" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M18.67 8.17H23.33V12.83" stroke="white" stroke-width="2.33" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2.33 2.33H25.67V25.67H2.33V2.33Z" stroke="white" stroke-width="2.33"/>
+            </svg>
+          </div>
+          <div class="credibility-label">Ad Spend Managed</div>
+          <div class="credibility-value">₩12+ Billion</div>
         </div>
-        <div class="stat">
-          <div class="stat-value">55%</div>
-          <div class="stat-label" data-en="Lower CPA" data-ko="CPA 절감">Lower CPA</div>
+        <div class="credibility-card">
+          <div class="credibility-icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="14" cy="14" r="11.67" stroke="white" stroke-width="2.33"/>
+              <circle cx="14" cy="14" r="7.78" stroke="white" stroke-width="2.33"/>
+              <circle cx="14" cy="14" r="3.89" stroke="white" stroke-width="2.33"/>
+              <circle cx="14" cy="14" r="1.17" fill="white"/>
+            </svg>
+          </div>
+          <div class="credibility-label">Campaign Success Rate</div>
+          <div class="credibility-value">94% Client Retention</div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <hr class="section-rule">
-
-  <section class="founder" id="about">
-    <div class="container">
-      <div class="founder-grid">
-        <div class="founder-image-wrapper">
-          <img src="founder.png" alt="Park Yurim" width="320" height="320">
-        </div>
-        <div class="founder-content">
-          <div class="section-label" data-en="Founder" data-ko="대표 소개">Founder</div>
-          <h2 class="font-display" data-en="Park Yurim" data-ko="박유림">Park Yurim</h2>
-          <p class="founder-role" data-en="CEO, Ideaflow Marketing Agency" data-ko="CEO, 아이디어플로우 마케팅 에이전시">CEO, Ideaflow Marketing Agency</p>
-          <p class="founder-bio" data-en="With hands-on experience at Meta Singapore as a Facebook Account Specialist, I bring insider knowledge that most agencies simply don't have. No hearsay marketing tactics—only strategies learned directly from Meta's Product Scientists and internal training." data-ko="메타 싱가포르에서 Facebook Account Specialist로 근무한 경험을 바탕으로, 대부분의 에이전시가 갖추지 못한 내부 노하우를 보유하고 있습니다. 카더라 마케팅이 아닌, 메타의 Product Scientist와 내부 교육에서 직접 배운 전략만을 사용합니다.">
-            With hands-on experience at Meta Singapore as a Facebook Account Specialist, 
-            I bring insider knowledge that most agencies simply don't have. No hearsay marketing tactics—only strategies learned directly from Meta's Product Scientists and internal training.
-          </p>
-          <div class="founder-credentials">
-            <div class="credential" data-en="Former Facebook Account Specialist, Meta Singapore" data-ko="전 Facebook Account Specialist, Meta Singapore">Former Facebook Account Specialist, Meta Singapore</div>
-            <div class="credential" data-en="Managed 150–180 ad accounts quarterly" data-ko="분기당 150–180개 광고 계정 관리">Managed 150–180 ad accounts quarterly</div>
-            <div class="credential" data-en="$9M+ in ad spend analyzed and optimized" data-ko="120억원 이상의 광고비 분석 및 최적화">$9M+ in ad spend analyzed and optimized</div>
+      <div class="credibility-stats">
+        <div class="credibility-stats-grid">
+          <div class="credibility-stat">
+            <div class="credibility-stat-value">500+</div>
+            <div class="credibility-stat-label">Campaigns Launched</div>
+          </div>
+          <div class="credibility-stat">
+            <div class="credibility-stat-value">150+</div>
+            <div class="credibility-stat-label">Clients Worldwide</div>
+          </div>
+          <div class="credibility-stat">
+            <div class="credibility-stat-value">432%</div>
+            <div class="credibility-stat-label">Average ROAS</div>
+          </div>
+          <div class="credibility-stat">
+            <div class="credibility-stat-value">₩12B+</div>
+            <div class="credibility-stat-label">Total Ad Spend</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <hr class="section-rule">
-
-  <section class="services" id="services">
+  <!-- Trusted Clients Section -->
+  <section class="trusted-clients">
     <div class="container">
       <div class="section-header">
-        <div>
-          <div class="section-label" data-en="Services" data-ko="서비스">Services</div>
-          <h2 class="font-display" data-en="Performance marketing that delivers" data-ko="성과를 만드는 퍼포먼스 마케팅">Performance marketing that delivers</h2>
-        </div>
-        <p class="section-description" data-en="Strategic Meta campaigns through Ads Manager. We analyze spend vs. results and optimize for genuine business growth." data-ko="메타 광고 관리자를 통한 전략적 캠페인 운영. 광고비 대비 성과를 분석하고 진정한 비즈니스 성장을 위해 최적화합니다.">
-          Strategic Meta campaigns through Ads Manager. We analyze spend vs. results and optimize for genuine business growth.
+        <h2 class="section-title">Trusted Clients</h2>
+        <p class="section-description">
+          Partnering with leading brands to drive exceptional results
+        </p>
+          </div>
+      <div class="clients-image-wrapper">
+        <img src="clientphoto.png" alt="Trusted Client Logos" class="clients-image" width="1024" height="124">
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Comprehensive Meta Marketing Services</h2>
+        <p class="section-description">
+          Full-service Meta advertising solutions covering strategy, execution, and optimization
         </p>
       </div>
 
       <div class="services-grid">
         <div class="service-card">
-          <div class="service-number">001</div>
-          <h3 data-en="Performance Ads" data-ko="퍼포먼스 광고">Performance Ads</h3>
-          <p data-en="Strategic Meta campaigns through Ads Manager. We analyze spend vs. results and optimize for genuine business growth—not vanity metrics." data-ko="메타 광고 관리자를 통한 전략적 캠페인 운영. 허수 지표가 아닌, 광고비 대비 성과를 분석하고 실질적인 비즈니스 성장을 위해 최적화합니다.">Strategic Meta campaigns through Ads Manager. We analyze spend vs. results and optimize for genuine business growth—not vanity metrics.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-number">002</div>
-          <h3 data-en="Creative Strategy" data-ko="크리에이티브 전략">Creative Strategy</h3>
-          <p data-en="Scroll-stopping creative that converts. We develop diverse creatives based on concept and format to maximize campaign performance." data-ko="스크롤을 멈추게 하는 전환 크리에이티브. 컨셉과 포맷을 기반으로 다양한 크리에이티브를 개발하여 캠페인 성과를 극대화합니다.">Scroll-stopping creative that converts. We develop diverse creatives based on concept and format to maximize campaign performance.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-number">003</div>
-          <h3 data-en="Campaign Optimization" data-ko="캠페인 최적화">Campaign Optimization</h3>
-          <p data-en="Machine learning-driven optimization. We leverage Advantage+ shopping campaigns and catalog ads for efficient retargeting." data-ko="머신러닝 기반 최적화. Advantage+ 쇼핑 캠페인과 카탈로그 광고를 활용하여 효율적인 리타겟팅을 진행합니다.">Machine learning-driven optimization. We leverage Advantage+ shopping campaigns and catalog ads for efficient retargeting.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <hr class="section-rule">
-
-  <section class="why-meta">
-    <div class="container">
-      <div class="section-header">
-        <div>
-          <div class="section-label" data-en="Why Meta" data-ko="왜 메타인가">Why Meta</div>
-          <h2 class="font-display" data-en="Where purchase decisions happen" data-ko="구매 결정이 이루어지는 곳">Where purchase decisions happen</h2>
-        </div>
-        <p class="section-description" data-en="Facebook, Instagram, Messenger, WhatsApp—reach new and existing customers where they already spend their time." data-ko="페이스북, 인스타그램, 메신저, 왓츠앱 — 고객이 이미 시간을 보내는 곳에서 신규 및 기존 고객에게 도달하세요.">
-          Facebook, Instagram, Messenger, WhatsApp—reach new and existing customers where they already spend their time.
-        </p>
-      </div>
-
-      <div class="meta-stats">
-        <div class="meta-stat">
-          <div class="meta-stat-value">77%</div>
-          <div class="meta-stat-label" data-en="of shoppers say Meta influenced their purchase decisions during major sales" data-ko="쇼핑객의 77%가 주요 세일 기간 동안 메타가 구매 결정에 영향을 미쳤다고 응답">of shoppers say Meta influenced their purchase decisions during major sales</div>
-        </div>
-        <div class="meta-stat">
-          <div class="meta-stat-value">48.6%</div>
-          <div class="meta-stat-label" data-en="of social media users primarily use Instagram—1 in 2 people" data-ko="소셜 미디어 사용자의 절반이 인스타그램을 주로 사용 — 2명 중 1명">of social media users primarily use Instagram—1 in 2 people</div>
-        </div>
-        <div class="meta-stat">
-          <div class="meta-stat-value" data-en="23.4M" data-ko="2,340만">23.4M</div>
-          <div class="meta-stat-label" data-en="Instagram users in Korea—45.2% of the total population" data-ko="한국 인스타그램 사용자 수 — 전체 인구의 45.2%">Instagram users in Korea—45.2% of the total population</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <hr class="section-rule">
-
-  <section class="results" id="results">
-    <div class="container">
-      <div class="section-header">
-        <div>
-          <div class="section-label" data-en="Results" data-ko="성과">Results</div>
-          <h2 class="font-display" data-en="Real performance, documented" data-ko="문서화된 실제 성과">Real performance, documented</h2>
-        </div>
-        <p class="section-description" data-en="We don't promise fake followers or vanity metrics. Every result here is from real campaigns with real businesses." data-ko="가짜 팔로워나 허수 지표를 약속하지 않습니다. 여기 있는 모든 성과는 실제 비즈니스와의 실제 캠페인 결과입니다.">
-          We don't promise fake followers or vanity metrics. Every result here is from real campaigns with real businesses.
-        </p>
-      </div>
-
-      <div class="results-grid">
-        <div class="result-card featured">
-          <div class="result-label" data-en="Head-to-Head Comparison" data-ko="직접 비교">Head-to-Head Comparison</div>
-          <div class="result-title" data-en="Ideaflow vs. Competitor Agency" data-ko="아이디어플로우 vs. 경쟁 에이전시">Ideaflow vs. Competitor Agency</div>
-          <div class="result-description" data-en="Same business, same period, direct A/B test between agencies" data-ko="동일 업체, 동일 기간, 에이전시 간 직접 A/B 테스트">Same business, same period, direct A/B test between agencies</div>
-          <div class="result-comparison">
-            <div class="comparison-item">
-              <div class="comparison-label" data-en="Competitor CPA" data-ko="경쟁사 CPA">Competitor CPA</div>
-              <div class="comparison-value before">₩26,949</div>
-            </div>
-            <div class="comparison-item">
-              <div class="comparison-label" data-en="Ideaflow CPA" data-ko="아이디어플로우 CPA">Ideaflow CPA</div>
-              <div class="comparison-value">₩12,189</div>
-            </div>
-            <div class="comparison-item">
-              <div class="comparison-label" data-en="Cost Savings" data-ko="비용 절감">Cost Savings</div>
-              <div class="comparison-value">55%</div>
-            </div>
+          <div class="service-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 4H20L26 10V26C26 27.1 25.1 28 24 28H6C4.9 28 4 27.1 4 26V6C4 4.9 4.9 4 6 4Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M20 4V10H26" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M9 16H23" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              <path d="M9 20H19" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              <path d="M24 12L28 8L24 12L28 16L24 12Z" fill="white"/>
+            </svg>
+          </div>
+          <h3>Campaign Strategy & Setup</h3>
+          <p>Custom Meta advertising strategies aligned with your business objectives, audience insights, and competitive landscape.</p>
+          <div class="service-features">
+            <div class="service-feature">Audience Research</div>
+            <div class="service-feature">Competitor Analysis</div>
+            <div class="service-feature">Campaign Architecture</div>
+            <div class="service-feature">Pixel Implementation</div>
           </div>
         </div>
-
-        <div class="result-card">
-          <div class="result-label" data-en="Campaign Optimization" data-ko="캠페인 최적화">Campaign Optimization</div>
-          <div class="result-metric">84%</div>
-          <div class="result-title" data-en="Cost Per Result Reduction" data-ko="결과당 비용 절감">Cost Per Result Reduction</div>
-          <div class="result-description" data-en="From ₩66,633 to ₩10,161 after optimization" data-ko="최적화 후 ₩66,633에서 ₩10,161로 감소">From ₩66,633 to ₩10,161 after optimization</div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17 2L8 18H16L15 30L24 14H16L17 2Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Performance Optimization</h3>
+          <p>Continuous A/B testing and data analysis to maximize ROAS and minimize cost per acquisition.</p>
+          <div class="service-features">
+            <div class="service-feature">Creative Testing</div>
+            <div class="service-feature">Bid Optimization</div>
+            <div class="service-feature">Audience Refinement</div>
+            <div class="service-feature">Budget Allocation</div>
+          </div>
         </div>
-
-        <div class="result-card">
-          <div class="result-label" data-en="E-commerce Launch" data-ko="이커머스 런칭">E-commerce Launch</div>
-          <div class="result-metric">7.99×</div>
-          <div class="result-title" data-en="ROAS on First Campaign" data-ko="첫 캠페인 ROAS">ROAS on First Campaign</div>
-          <div class="result-description" data-en="New online shopping mall, October 2024" data-ko="신규 온라인 쇼핑몰, 2024년 10월">New online shopping mall, October 2024</div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="16" cy="16" r="12" stroke="white" stroke-width="2"/>
+              <circle cx="16" cy="16" r="7" stroke="white" stroke-width="2"/>
+              <circle cx="16" cy="16" r="3" stroke="white" stroke-width="2"/>
+              <circle cx="16" cy="16" r="1.5" fill="#EF4444"/>
+            </svg>
+          </div>
+          <h3>Conversion Rate Optimization</h3>
+          <p>Landing page optimization and conversion funnel analysis to turn clicks into customers.</p>
+          <div class="service-features">
+            <div class="service-feature">Funnel Analysis</div>
+            <div class="service-feature">Landing Page Testing</div>
+            <div class="service-feature">Form Optimization</div>
+            <div class="service-feature">Checkout Flow</div>
+          </div>
         </div>
-
-        <div class="result-card">
-          <div class="result-label" data-en="Women's Accessories" data-ko="여성 액세서리">Women's Accessories</div>
-          <div class="result-metric">147%</div>
-          <div class="result-title" data-en="ROAS Increase" data-ko="ROAS 증가">ROAS Increase</div>
-          <div class="result-description" data-en="Within 2 weeks of launch, April 2025" data-ko="런칭 2주 만에 달성, 2025년 4월">Within 2 weeks of launch, April 2025</div>
+      </div>
+      
+      <div class="services-grid-bottom">
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="11" cy="9" r="4" stroke="white" stroke-width="2"/>
+              <circle cx="21" cy="9" r="4" stroke="white" stroke-width="2"/>
+              <path d="M4 25C4 20 6.5 17 11 17" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              <path d="M28 25C28 20 25.5 17 21 17" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              <path d="M16 25C16 20.5 13.5 18 11 18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              <path d="M16 25C16 20.5 18.5 18 21 18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Audience Development</h3>
+          <p>Advanced audience segmentation and lookalike modeling to reach your ideal customers.</p>
+          <div class="service-features">
+            <div class="service-feature">Custom Audiences</div>
+            <div class="service-feature">Lookalike Modeling</div>
+            <div class="service-feature">Interest Targeting</div>
+            <div class="service-feature">Retargeting Campaigns</div>
+          </div>
         </div>
-
-        <div class="result-card">
-          <div class="result-label" data-en="Children's Brand" data-ko="아동 브랜드">Children's Brand</div>
-          <div class="result-metric">5.97×</div>
-          <div class="result-title" data-en="Average ROAS" data-ko="평균 ROAS">Average ROAS</div>
-          <div class="result-description" data-en="Children's Day campaign, first-time advertiser" data-ko="어린이날 캠페인, 첫 광고 집행 광고주">Children's Day campaign, first-time advertiser</div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 10H28L26 22H12L10 10Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 26C13.1046 26 14 25.1046 14 24C14 22.8954 13.1046 22 12 22C10.8954 22 10 22.8954 10 24C10 25.1046 10.8954 26 12 26Z" stroke="white" stroke-width="2"/>
+              <path d="M24 26C25.1046 26 26 25.1046 26 24C26 22.8954 25.1046 22 24 22C22.8954 22 22 22.8954 22 24C22 25.1046 22.8954 26 24 26Z" stroke="white" stroke-width="2"/>
+              <path d="M4 4H8L10 12" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>E-Commerce Campaigns</h3>
+          <p>Specialized strategies for online stores including dynamic product ads and catalog optimization.</p>
+          <div class="service-features">
+            <div class="service-feature">Product Catalog Setup</div>
+            <div class="service-feature">Dynamic Ads</div>
+            <div class="service-feature">Collection Ads</div>
+            <div class="service-feature">Shopping Features</div>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="9" y="4" width="14" height="24" rx="2" stroke="white" stroke-width="2"/>
+              <path d="M12 8H20" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="16" cy="14" r="1" fill="white"/>
+              <circle cx="13" cy="14" r="1" fill="white"/>
+              <circle cx="19" cy="14" r="1" fill="white"/>
+              <circle cx="16" cy="17" r="1" fill="white"/>
+              <circle cx="13" cy="17" r="1" fill="white"/>
+              <circle cx="19" cy="17" r="1" fill="white"/>
+              <path d="M14 22H18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Mobile App Marketing</h3>
+          <p>App install campaigns and re-engagement strategies to grow your mobile user base.</p>
+          <div class="service-features">
+            <div class="service-feature">App Install Campaigns</div>
+            <div class="service-feature">Deep Linking</div>
+            <div class="service-feature">In-App Events</div>
+            <div class="service-feature">User Retention</div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="clients">
-    <div class="container">
-      <p class="clients-label" data-en="Trusted By" data-ko="신뢰하는 파트너">Trusted By</p>
-      <div class="clients-logos">
-        <div class="client-logo">
-          <img src="logos/nice-investors.svg" alt="NICE Investors" width="220" height="100">
-        </div>
-        <div class="client-logo">
-          <img src="logos/gobiz.png" alt="Gobiz Korea" width="220" height="100">
-        </div>
-        <div class="client-logo">
-          <img src="logos/kosme.png" alt="KOSME" width="220" height="100">
-        </div>
-        <div class="client-logo">
-          <img src="logos/kyobo.png" alt="Kyobo" width="220" height="100">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="process" id="process">
+  <!-- Process Section -->
+  <section class="process section">
     <div class="container">
       <div class="section-header">
-        <div>
-          <div class="section-label" data-en="Process" data-ko="프로세스">Process</div>
-          <h2 class="font-display" data-en="From brief to results" data-ko="브리프에서 성과까지">From brief to results</h2>
-        </div>
-        <p class="section-description" data-en="We move fast. Most campaigns are live within weeks, not months." data-ko="빠르게 움직입니다. 대부분의 캠페인은 몇 달이 아닌 몇 주 안에 라이브됩니다.">
+        <h2 class="section-title">From Idea to Results</h2>
+        <p class="section-description">
           We move fast. Most campaigns are live within weeks, not months.
         </p>
       </div>
 
       <div class="process-grid">
         <div class="process-step">
-          <div class="step-number">001</div>
-          <h3 data-en="Discovery" data-ko="분석">Discovery</h3>
-          <p data-en="Define machine learning plan, identify key business questions, test hypotheses." data-ko="머신러닝 플랜 정의, 핵심 비즈니스 질문 식별, 가설 테스트.">Define machine learning plan, identify key business questions, test hypotheses.</p>
+          <div class="process-step-number">
+            <span>001</span>
+            <div class="process-step-icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="7" stroke="white" stroke-width="2"/>
+                <path d="M18 18L22 22" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+          <h3>Discovery</h3>
+          <p>Define machine learning plan, identify key business questions, test hypotheses.</p>
+          <div class="process-connector"></div>
         </div>
         <div class="process-step">
-          <div class="step-number">002</div>
-          <h3 data-en="Creative" data-ko="크리에이티브">Creative</h3>
-          <p data-en="Produce diverse creatives based on concept and format to maximize testing." data-ko="테스팅을 극대화하기 위해 컨셉과 포맷 기반의 다양한 크리에이티브 제작.">Produce diverse creatives based on concept and format to maximize testing.</p>
+          <div class="process-step-number">
+            <span>002</span>
+            <div class="process-step-icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="14" cy="18" rx="10" ry="6" stroke="white" stroke-width="2"/>
+                <path d="M14 4L10 12L14 10L18 12L14 4Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="8" cy="18" r="1.5" fill="#FCD34D"/>
+                <circle cx="12" cy="20" r="1.5" fill="#10B981"/>
+                <circle cx="16" cy="19" r="1.5" fill="#3B82F6"/>
+                <circle cx="20" cy="21" r="1.5" fill="#EC4899"/>
+                <circle cx="18" cy="17" r="1.5" fill="#F59E0B"/>
+              </svg>
+            </div>
+          </div>
+          <h3>Creative</h3>
+          <p>Produce diverse creatives based on concept and format to maximize testing.</p>
+          <div class="process-connector"></div>
         </div>
         <div class="process-step">
-          <div class="step-number">003</div>
-          <h3 data-en="Launch" data-ko="런칭">Launch</h3>
-          <p data-en="Deploy Advantage+ campaigns, minimize changes during learning phase." data-ko="Advantage+ 캠페인 배포, 학습 단계에서 변경 최소화.">Deploy Advantage+ campaigns, minimize changes during learning phase.</p>
+          <div class="process-step-number">
+            <span>003</span>
+            <div class="process-step-icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 6L16 10L14 20L12 10L14 6Z" fill="white"/>
+                <path d="M12 10L14 20L16 10" stroke="#EF4444" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="14" cy="12" r="2" fill="#EF4444"/>
+                <path d="M12 20L10 22L8 24" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+                <path d="M16 20L18 22L20 24" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+                <path d="M14 20L14 24" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+          <h3>Launch</h3>
+          <p>Deploy Advantage+ campaigns, minimize changes during learning phase.</p>
+          <div class="process-connector"></div>
         </div>
         <div class="process-step">
-          <div class="step-number">004</div>
-          <h3 data-en="Scale" data-ko="스케일">Scale</h3>
-          <p data-en="Leverage catalog ads for retargeting, match products to churned customers." data-ko="리타겟팅을 위한 카탈로그 광고 활용, 이탈 고객에게 상품 매칭.">Leverage catalog ads for retargeting, match products to churned customers.</p>
+          <div class="process-step-number">
+            <span>004</span>
+            <div class="process-step-icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 20L8 16L12 18L16 10L24 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="8" cy="16" r="1.5" fill="white"/>
+                <circle cx="12" cy="18" r="1.5" fill="white"/>
+                <circle cx="16" cy="10" r="1.5" fill="white"/>
+                <circle cx="24" cy="8" r="1.5" fill="white"/>
+                <path d="M2 22H26" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+          <h3>Scale</h3>
+          <p>Leverage catalog ads for retargeting, match products to churned customers.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="cta" id="contact">
+  <!-- Case Studies Section -->
+  <section class="case-studies section" id="case-studies">
     <div class="container">
-      <div class="section-label" style="justify-content: center; color: rgba(255,255,255,0.5);" data-en="Contact" data-ko="문의">Contact</div>
-      <h2 class="font-display" data-en="Let's build your&lt;br&gt;next campaign" data-ko="다음 캠페인을&lt;br&gt;함께 만들어요">Let's build your<br>next campaign</h2>
-      <p data-en="No fake followers. No vanity metrics. Just real business growth." data-ko="가짜 팔로워 없이. 허수 지표 없이. 오직 실질적인 비즈니스 성장만.">No fake followers. No vanity metrics. Just real business growth.</p>
-      
-      <a href="mailto:contact@ideaflow.com" class="btn" data-en="Book a call →" data-ko="상담 예약 →">Book a call →</a>
-      
-      <div class="contact-info">
-        <div class="contact-item">
-          <a href="mailto:contact@ideaflow.com">contact@ideaflow.com</a>
+      <div class="section-header">
+        <h2 class="section-title">Real Results, Real Impact</h2>
+        <p class="section-description">
+          See how data-driven optimization transformed our clients' Meta advertising performance
+        </p>
+      </div>
+
+      <div class="case-studies-grid">
+        <!-- Case Study 1 -->
+        <div class="case-study-card">
+          <div class="case-study-header">
+            <div>
+              <h3 class="case-study-title">E-Commerce Fashion Brand</h3>
+              <div class="case-study-meta">
+                <span>Retail</span>
+                <span>•</span>
+                <span>3 months campaign</span>
+              </div>
+            </div>
+            <div class="case-study-challenge">
+              <strong>Challenge:</strong> High cost per acquisition, low ROAS
+            </div>
+          </div>
+          <div class="case-study-comparison">
+            <div class="comparison-column before">
+              <div class="comparison-column-header">
+                <span>Before</span>
+              </div>
+              <div class="comparison-metrics">
+                <div class="comparison-metric">
+                  <span class="comparison-metric-label">roas:</span>
+                  <span class="comparison-metric-value">1.8x</span>
+                </div>
+                <div class="comparison-metric">
+                  <span class="comparison-metric-label">cpa:</span>
+                  <span class="comparison-metric-value">₩45,000</span>
+                </div>
+                <div class="comparison-metric">
+                  <span class="comparison-metric-label">conversion:</span>
+                  <span class="comparison-metric-value">1.2%</span>
+                </div>
+              </div>
+            </div>
+            <div class="comparison-column impact">
+              <div class="comparison-column-header"></div>
+              <div class="comparison-metrics">
+                <div class="comparison-metric">
+                  <span class="comparison-metric-value">+200%</span>
+                </div>
+                <div class="comparison-metric">
+                  <span class="comparison-metric-value">-60%</span>
+                </div>
+                <div class="comparison-metric">
+                  <span class="comparison-metric-value">+300%</span>
+                </div>
+              </div>
+            </div>
+            <div class="comparison-column after">
+              <div class="comparison-column-header">
+                <span>After</span>
+              </div>
+              <div class="comparison-metrics">
+                <div class="comparison-metric">
+                  <span class="comparison-metric-label">roas:</span>
+                  <span class="comparison-metric-value">5.4x</span>
+                </div>
+                <div class="comparison-metric">
+                  <span class="comparison-metric-label">cpa:</span>
+                  <span class="comparison-metric-value">₩18,000</span>
+                </div>
+                <div class="comparison-metric">
+                  <span class="comparison-metric-label">conversion:</span>
+                  <span class="comparison-metric-value">4.8%</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="contact-item">
-          <a href="tel:+821099603456">+82 10 9960 3456</a>
+
+        <!-- Case Study 2 -->
+        <div class="case-study-card">
+          <div class="case-study-header">
+            <div>
+              <h3 class="case-study-title">B2B SaaS Platform</h3>
+              <div class="case-study-meta">
+                <span>Technology</span>
+                <span>•</span>
+                <span>4 months campaign</span>
+              </div>
+            </div>
+            <div class="case-study-challenge">
+              <strong>Challenge:</strong> Low lead quality, poor targeting
+            </div>
+          </div>
+          <div class="case-study-comparison">
+            <div class="comparison-column before">
+              <div class="comparison-column-header">
+                <span>Before</span>
+              </div>
+              <div class="comparison-metrics">
+                <div class="comparison-metric">
+                  <span class="comparison-metric-label">leads:</span>
+                  <span class="comparison-metric-value">120/mo</span>
+                </div>
+                <div class="comparison-metric">
+                  <span class="comparison-metric-label">cpl:</span>
+                  <span class="comparison-metric-value">₩85,000</span>
+                </div>
+                <div class="comparison-metric">
+                  <span class="comparison-metric-label">qualified:</span>
+                  <span class="comparison-metric-value">15%</span>
+                </div>
+              </div>
+            </div>
+            <div class="comparison-column impact">
+              <div class="comparison-column-header"></div>
+              <div class="comparison-metrics">
+                <div class="comparison-metric">
+                  <span class="comparison-metric-value">+300%</span>
+                </div>
+                <div class="comparison-metric">
+                  <span class="comparison-metric-value">-51%</span>
+                </div>
+                <div class="comparison-metric">
+                  <span class="comparison-metric-value">+353%</span>
+                </div>
+              </div>
+            </div>
+            <div class="comparison-column after">
+              <div class="comparison-column-header">
+                <span>After</span>
+              </div>
+              <div class="comparison-metrics">
+                <div class="comparison-metric">
+                  <span class="comparison-metric-label">leads:</span>
+                  <span class="comparison-metric-value">480/mo</span>
+                </div>
+                <div class="comparison-metric">
+                  <span class="comparison-metric-label">cpl:</span>
+                  <span class="comparison-metric-value">₩42,000</span>
+                </div>
+                <div class="comparison-metric">
+                  <span class="comparison-metric-label">qualified:</span>
+                  <span class="comparison-metric-value">68%</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="contact-item">
-          <a href="https://instagram.com/ideaflow_mkt" target="_blank">@ideaflow_mkt</a>
+
+        <!-- Case Study 3 -->
+        <div class="case-study-card">
+          <div class="case-study-header">
+            <div>
+              <h3 class="case-study-title">Health & Wellness App</h3>
+              <div class="case-study-meta">
+                <span>Mobile Apps</span>
+                <span>•</span>
+                <span>5 months campaign</span>
+              </div>
+            </div>
+            <div class="case-study-challenge">
+              <strong>Challenge:</strong> Declining user acquisition, high CAC
+            </div>
+          </div>
+          <div class="case-study-comparison">
+            <div class="comparison-column before">
+              <div class="comparison-column-header">
+                <span>Before</span>
+              </div>
+              <div class="comparison-metrics">
+                <div class="comparison-metric">
+                  <span class="comparison-metric-label">installs:</span>
+                  <span class="comparison-metric-value">2.5K/mo</span>
+                </div>
+                <div class="comparison-metric">
+                  <span class="comparison-metric-label">cac:</span>
+                  <span class="comparison-metric-value">₩12,500</span>
+                </div>
+                <div class="comparison-metric">
+                  <span class="comparison-metric-label">retention:</span>
+                  <span class="comparison-metric-value">22%</span>
+                </div>
+              </div>
+            </div>
+            <div class="comparison-column impact">
+              <div class="comparison-column-header"></div>
+              <div class="comparison-metrics">
+                <div class="comparison-metric">
+                  <span class="comparison-metric-value">+620%</span>
+        </div>
+                <div class="comparison-metric">
+                  <span class="comparison-metric-value">-50%</span>
+        </div>
+                <div class="comparison-metric">
+                  <span class="comparison-metric-value">+164%</span>
+        </div>
+      </div>
+    </div>
+            <div class="comparison-column after">
+              <div class="comparison-column-header">
+                <span>After</span>
+              </div>
+              <div class="comparison-metrics">
+                <div class="comparison-metric">
+                  <span class="comparison-metric-label">installs:</span>
+                  <span class="comparison-metric-value">18K/mo</span>
+                </div>
+                <div class="comparison-metric">
+                  <span class="comparison-metric-label">cac:</span>
+                  <span class="comparison-metric-value">₩6,200</span>
+                </div>
+                <div class="comparison-metric">
+                  <span class="comparison-metric-label">retention:</span>
+                  <span class="comparison-metric-value">58%</span>
+                </div>
+        </div>
+        </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="case-study-cta">
+        <a href="#contact" class="btn-primary">Book Your Strategy Call</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Book Your Free Strategy Call</h2>
+        <p class="section-description">
+          Let's discuss how we can help you achieve exceptional results with data-driven Meta advertising
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <form class="contact-form">
+          <h3>Schedule Your Free Consultation</h3>
+          <div class="form-group">
+            <label class="form-label">Full Name *</label>
+            <input type="text" class="form-input" placeholder="John Smith" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email Address *</label>
+            <input type="email" class="form-input" placeholder="john@company.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Company Name</label>
+            <input type="text" class="form-input" placeholder="Your Company">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Monthly Ad Budget</label>
+            <select class="form-select">
+              <option>Select budget range</option>
+              <option>Under ₩5M</option>
+              <option>₩5M - ₩10M</option>
+              <option>₩10M - ₩30M</option>
+              <option>₩30M - ₩50M</option>
+              <option>Over ₩50M</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Project Details *</label>
+            <textarea class="form-textarea" placeholder="Tell us about your goals and current challenges..." required></textarea>
+          </div>
+          <button type="submit" class="form-submit">Book My Call Now</button>
+        </form>
+
+        <div class="contact-info">
+          <div class="contact-info-card">
+            <div class="contact-info-icon">💬</div>
+            <h4>Quick Response Time</h4>
+            <p>We respond to all inquiries within 24 hours. Get expert advice on your Meta advertising strategy.</p>
+            <div class="contact-info-links">
+              <a href="mailto:yl.ideaflow@gmail.com" class="contact-info-link">yl.ideaflow@gmail.com</a>
+              <a href="tel:+821099603456" class="contact-info-link">+82 10 9960 3456</a>
+            </div>
+          </div>
+
+          <div class="contact-info-card highlight">
+            <div class="contact-info-icon">📊</div>
+            <h4>Free Campaign Audit</h4>
+            <p>Get a complimentary analysis of your current Meta campaigns and discover optimization opportunities.</p>
+            <div class="contact-info-list">
+              <div class="contact-info-list-item">Performance Analysis</div>
+              <div class="contact-info-list-item">Optimization Recommendations</div>
+              <div class="contact-info-list-item">Growth Strategy</div>
+            </div>
+        </div>
+
+          <div class="contact-info-card">
+            <div class="contact-security">
+              <div class="contact-security-icon">🔒</div>
+              <h4>Your Data is Secure</h4>
+              <p>All information is confidential and protected. We respect your privacy and will never share your details.</p>
+        </div>
+        </div>
         </div>
       </div>
     </div>
   </section>
 
-  <footer>
+  <!-- Footer -->
+  <footer class="footer">
     <div class="container">
-      <div class="footer-links">
-        <a href="https://instagram.com/ideaflow_mkt" target="_blank">Instagram</a>
-        
-        <a href="mailto:contact@ideaflow.com">Email</a>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="footer-logo-text">idea flow</div>
+          </div>
+          <p class="footer-description">
+            Meta-Certified Performance Marketing Agency. Transform your social media advertising with data-driven strategies.
+          </p>
+          <div class="footer-social">
+            <a href="#" class="footer-social-link">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="10" cy="10" r="9" stroke="white" stroke-width="1.5"/>
+                <path d="M8 6V7.5H7V9H8V14H10V9H11.5V7.5H10V6.5C10 6.22 10.22 6 10.5 6H12V4H10.5C9.12 4 8 5.12 8 6.5V6Z" fill="white"/>
+              </svg>
+            </a>
+            <a href="#" class="footer-social-link">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.5 4.5C16.1 4.7 15.65 4.85 15.18 4.93C15.66 4.6 16.03 4.12 16.2 3.55C15.75 3.82 15.23 4 14.68 4.11C14.26 3.66 13.63 3.38 12.92 3.38C11.45 3.38 10.26 4.57 10.26 6.04C10.26 6.24 10.28 6.43 10.32 6.61C8.26 6.51 6.48 5.5 5.29 4.03C5.06 4.41 4.93 4.85 4.93 5.32C4.93 6.21 5.35 7.01 6.01 7.46C5.5 7.45 5.02 7.31 4.6 7.08C4.6 7.09 4.6 7.1 4.6 7.11C4.6 8.54 5.66 9.73 7.08 10.01C6.86 10.06 6.63 10.09 6.39 10.09C6.22 10.09 6.06 10.07 5.9 10.04C6.23 11.2 7.23 12.03 8.43 12.05C7.52 12.83 6.32 13.33 5.01 13.33C4.78 13.33 4.56 13.31 4.34 13.28C5.46 14.08 6.84 14.59 8.35 14.59C12.9 14.59 15.62 10.14 15.62 6.3C15.62 6.18 15.61 6.06 15.6 5.95C16.18 5.54 16.68 5.02 17.07 4.41C16.52 4.62 15.93 4.76 15.32 4.82C15.96 4.44 16.45 3.85 16.69 3.14C16.08 3.48 15.41 3.72 14.7 3.84C14.1 3.28 13.28 2.95 12.37 2.95C10.59 2.95 9.15 4.39 9.15 6.17C9.15 6.4 9.18 6.62 9.23 6.83C7.1 6.71 5.33 5.75 4.16 4.32C3.93 4.67 3.8 5.09 3.8 5.54C3.8 6.39 4.26 7.14 4.93 7.56C4.46 7.55 4.02 7.41 3.63 7.19C3.63 7.2 3.63 7.21 3.63 7.22C3.63 8.64 4.67 9.8 6.06 10.07C5.85 10.12 5.63 10.14 5.4 10.14C5.24 10.14 5.09 10.12 4.94 10.09C5.26 11.22 6.24 12.03 7.42 12.05C6.52 12.81 5.34 13.29 4.02 13.29C3.79 13.29 3.57 13.27 3.35 13.24C4.45 14.01 5.78 14.5 7.23 14.5C12.74 14.5 15.44 10.09 15.44 6.26C15.44 6.14 15.43 6.02 15.42 5.9C16 5.49 16.5 4.98 16.89 4.38C16.35 4.58 15.77 4.71 15.17 4.77C15.81 4.4 16.3 3.82 16.54 3.12" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#" class="footer-social-link">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2.5" y="2.5" width="15" height="15" rx="4" stroke="white" stroke-width="1.5"/>
+                <circle cx="10" cy="10" r="3.5" stroke="white" stroke-width="1.5"/>
+                <circle cx="14.5" cy="5.5" r="1" fill="white"/>
+              </svg>
+            </a>
+            <a href="#" class="footer-social-link">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1.48" y="1.48" width="17.04" height="17.04" rx="1.48" stroke="white" stroke-width="1.5"/>
+                <path d="M6.08 17H3.27V7.52H6.08V17Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="4.67" cy="4.72" r="1.55" stroke="white" stroke-width="1.5"/>
+                <path d="M17 17H14.19V12.61C14.19 11.62 14.19 10.35 12.83 10.35C11.44 10.35 11.24 11.43 11.24 12.53V17H8.43V7.52H11.11V8.67H11.14C11.47 8.01 12.31 7.32 13.52 7.32C15.93 7.32 17 8.83 17 12.04V17Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="mailto:yl.ideaflow@gmail.com" class="footer-social-link">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2.5" y="3.75" width="15" height="12.5" rx="1.25" stroke="white" stroke-width="1.5"/>
+                <path d="M18.75 5L10 10.625L1.25 5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Services</h4>
+          <div class="footer-links">
+            <a href="#services" class="footer-link">Campaign Strategy</a>
+            <a href="#services" class="footer-link">Performance Optimization</a>
+            <a href="#services" class="footer-link">Conversion Optimization</a>
+            <a href="#services" class="footer-link">Audience Development</a>
+            <a href="#services" class="footer-link">E-Commerce Campaigns</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Company</h4>
+          <div class="footer-links">
+            <a href="#case-studies" class="footer-link">Case Studies</a>
+            <a href="#services" class="footer-link">Our Services</a>
+            <a href="#contact" class="footer-link">Contact Us</a>
+            <a href="#contact" class="footer-link">Free Audit</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Get In Touch</h4>
+          <div class="footer-links">
+            <div class="footer-contact-item">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 3H14C14.55 3 15 3.45 15 4V12C15 12.55 14.55 13 14 13H2C1.45 13 1 12.55 1 12V4C1 3.45 1.45 3 2 3Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15 4L8 8.5L1 4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>yl.ideaflow@gmail.com</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="2" width="8" height="12" rx="1.5" stroke="white" stroke-width="1.5"/>
+                <path d="M6 4H10" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M8 12.67H8.01" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+              <span>+82 10 9960 3456</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="2" width="12" height="12" rx="3" stroke="white" stroke-width="1.5"/>
+                <circle cx="8" cy="8" r="2.5" stroke="white" stroke-width="1.5"/>
+                <circle cx="12" cy="4" r="0.75" fill="white"/>
+              </svg>
+              <span>@ideaflow_mkt</span>
+            </div>
+            <div class="footer-contact-item location">
+              <span>Seoul, South Korea</span>
+            </div>
+            <div class="footer-badge">
+              <span>•</span>
+              <span>Meta Business Partner</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="copyright">© 2025 Ideaflow</div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          © 2025 idea flow. All rights reserved. Meta-Certified Marketing Partner.
+        </p>
+      </div>
     </div>
   </footer>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  <script>
+    // Language toggle functionality
     let currentLang = localStorage.getItem('lang') || 'en';
     
-    function setLanguage(lang) {
-      currentLang = lang;
-      localStorage.setItem('lang', lang);
+    function toggleLanguage() {
+      currentLang = currentLang === 'en' ? 'ko' : 'en';
+      localStorage.setItem('lang', currentLang);
+      updateLanguage();
+    }
+    
+    function updateLanguage() {
+      const langText = document.querySelector('.lang-text');
+      if (langText) {
+        langText.textContent = currentLang === 'en' ? 'EN' : 'KR';
+      }
       
-      // Update all elements with data-en and data-ko attributes
+      // Update elements with data-en and data-ko attributes
       document.querySelectorAll('[data-en][data-ko]').forEach(el => {
-        const text = el.getAttribute('data-' + lang);
+        const text = el.getAttribute('data-' + currentLang);
         if (text) {
           if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
             el.placeholder = text;
@@ -345,74 +832,32 @@
         }
       });
       
-      // Update toggle switch position
-      const langSwitch = document.querySelector('.lang-switch');
-      if (langSwitch) {
-        if (lang === 'ko') {
-          langSwitch.classList.add('ko');
-        } else {
-          langSwitch.classList.remove('ko');
-        }
-      }
-      
       // Update html lang attribute
-      document.documentElement.lang = lang === 'en' ? 'en' : 'ko';
+      document.documentElement.lang = currentLang;
     }
     
-    function toggleLanguage() {
-      setLanguage(currentLang === 'en' ? 'ko' : 'en');
-    }
+    // Initialize language on load
+    updateLanguage();
     
-    function toggleMobileMenu() {
-      const navLinks = document.getElementById('navLinks');
-      const menuBtn = document.getElementById('mobileMenuBtn');
-      navLinks.classList.toggle('open');
-      menuBtn.classList.toggle('open');
-    }
-    
-    // Close mobile menu when clicking a link
-    document.addEventListener('DOMContentLoaded', function() {
-      setLanguage(currentLang);
-      
-      document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
-          const navLinks = document.getElementById('navLinks');
-          const menuBtn = document.getElementById('mobileMenuBtn');
-          navLinks.classList.remove('open');
-          menuBtn.classList.remove('open');
-        });
-      });
-
-      // Scroll reveal animation
-      const revealElements = document.querySelectorAll('.service-card, .result-card, .process-step, .meta-stat, .founder-grid, .section-header');
-      const revealObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('active');
-          }
-        });
-      }, {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-      });
-
-      revealElements.forEach(el => {
-        el.classList.add('reveal');
-        revealObserver.observe(el);
-      });
-
-      // Nav scroll effect
-      const nav = document.querySelector('nav');
-      let lastScroll = 0;
-      window.addEventListener('scroll', () => {
-        const currentScroll = window.pageYOffset;
-        if (currentScroll > 50) {
-          nav.classList.add('scrolled');
-        } else {
-          nav.classList.remove('scrolled');
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
         }
-        lastScroll = currentScroll;
       });
+    });
+
+    // Form submission handler
+    document.querySelector('.contact-form')?.addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you! We will contact you soon.');
+      this.reset();
     });
   </script>
 </body>
