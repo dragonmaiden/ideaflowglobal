@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Ideaflow — Meta-Certified Performance Marketing Agency</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,19 +17,17 @@
     <div class="container">
       <a href="#" class="logo">idea flow</a>
       <nav>
-        <a href="#services" class="nav-link">Services</a>
-        <a href="#case-studies" class="nav-link">Case Studies</a>
-        <a href="#contact" class="nav-link">Contact</a>
-        <div class="lang-toggle" onclick="toggleLanguage()">
-          <svg class="globe-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="9" cy="9" r="7.5" stroke="#364153" stroke-width="1.5"/>
-            <ellipse cx="9" cy="9" rx="7.5" ry="2.5" stroke="#364153" stroke-width="1.5"/>
-            <ellipse cx="9" cy="9" rx="2.5" ry="7.5" stroke="#364153" stroke-width="1.5"/>
-            <line x1="9" y1="1.5" x2="9" y2="16.5" stroke="#364153" stroke-width="1.5"/>
-          </svg>
-          <span class="lang-text">EN</span>
+        <a href="#services" class="nav-link" data-en="Services" data-ko="서비스">Services</a>
+        <a href="#case-studies" class="nav-link" data-en="Case Studies" data-ko="사례 연구">Case Studies</a>
+        <a href="#contact" class="nav-link" data-en="Contact" data-ko="문의하기">Contact</a>
+        <div class="lang-toggle-wrapper">
+          <div class="lang-toggle" onclick="toggleLanguage()">
+            <span class="lang-option lang-en">EN</span>
+            <span class="lang-option lang-kr">KR</span>
+            <span class="lang-slider"></span>
+          </div>
         </div>
-        <a href="#contact" class="btn-primary">Book a Call</a>
+        <a href="#contact" class="btn-primary" data-en="Book a Call" data-ko="상담 예약">Book a Call</a>
       </nav>
     </div>
   </header>
@@ -38,31 +36,29 @@
   <section class="hero">
     <div class="container">
       <div>
-        <div class="hero-badge">Meta Business Partner</div>
+        <div class="hero-badge" data-en="Meta Business Partner" data-ko="메타 비즈니스 파트너">Meta Business Partner</div>
         <h1>
           What you need is a<br>
           <span class="highlight">Better</span> idea.
         </h1>
-        <p class="hero-description">
-          Transform your social media advertising with data-driven strategies that deliver measurable results. We optimize every dollar of your ad spend.
-        </p>
+        <p class="hero-description" data-en="Transform your social media advertising with data-driven strategies that deliver measurable results. We optimize every dollar of your ad spend." data-ko="데이터 기반 전략으로 소셜 미디어 광고를 혁신하세요. 측정 가능한 결과를 제공하며 광고 예산의 모든 달러를 최적화합니다.">Transform your social media advertising with data-driven strategies that deliver measurable results. We optimize every dollar of your ad spend.</p>
         <div class="hero-features">
           <div class="hero-feature">
             <div class="hero-feature-icon">✓</div>
-            <span>Meta-Certified Marketing Partner</span>
+            <span data-en="Meta-Certified Marketing Partner" data-ko="메타 공인 마케팅 파트너">Meta-Certified Marketing Partner</span>
           </div>
           <div class="hero-feature">
             <div class="hero-feature-icon">✓</div>
-            <span>Data-Driven Campaign Optimization</span>
+            <span data-en="Data-Driven Campaign Optimization" data-ko="데이터 기반 캠페인 최적화">Data-Driven Campaign Optimization</span>
           </div>
           <div class="hero-feature">
             <div class="hero-feature-icon">✓</div>
-            <span>ROI-Focused Performance Marketing</span>
+            <span data-en="ROI-Focused Performance Marketing" data-ko="ROI 중심 성과 마케팅">ROI-Focused Performance Marketing</span>
           </div>
         </div>
         <div class="hero-cta">
-          <a href="#contact" class="btn-primary">Book a Free Call</a>
-          <a href="#case-studies" class="btn-secondary">View Case Studies</a>
+          <a href="#contact" class="btn-primary" data-en="Book a Free Call" data-ko="무료 상담 예약">Book a Free Call</a>
+          <a href="#case-studies" class="btn-secondary" data-en="View Case Studies" data-ko="사례 연구 보기">View Case Studies</a>
         </div>
       </div>
       <div class="hero-image-wrapper">
@@ -75,10 +71,8 @@
   <section class="credibility section">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Proven Expertise in Meta Advertising</h2>
-        <p class="section-description">
-          Backed by Meta certification and years of experience managing high-performance campaigns for global brands
-        </p>
+        <h2 class="section-title" data-en="Proven Expertise in Meta Advertising" data-ko="검증된 메타 광고 전문성">Proven Expertise in Meta Advertising</h2>
+        <p class="section-description" data-en="Backed by Meta certification and years of experience managing high-performance campaigns for global brands" data-ko="메타 인증과 글로벌 브랜드를 위한 고성과 캠페인 관리 경험으로 뒷받침됩니다">Backed by Meta certification and years of experience managing high-performance campaigns for global brands</p>
       </div>
       
       <div class="credibility-cards">
@@ -89,8 +83,8 @@
               <circle cx="14" cy="13" r="3" stroke="white" stroke-width="2.33"/>
             </svg>
           </div>
-          <div class="credibility-label">Meta Certification</div>
-          <div class="credibility-value">Official Meta Business Partner</div>
+          <div class="credibility-label" data-en="Meta Certification" data-ko="메타 인증">Meta Certification</div>
+          <div class="credibility-value" data-en="Official Meta Business Partner" data-ko="공식 메타 비즈니스 파트너">Official Meta Business Partner</div>
         </div>
         <div class="credibility-card">
           <div class="credibility-icon">
@@ -103,8 +97,8 @@
               <path d="M14 21C14 17.5 16.5 15.5 19.5 15.5" stroke="white" stroke-width="2.33" stroke-linecap="round"/>
             </svg>
           </div>
-          <div class="credibility-label">Experience</div>
-          <div class="credibility-value">Ex-Facebook/Meta Specialist, Singapore</div>
+          <div class="credibility-label" data-en="Experience" data-ko="경험">Experience</div>
+          <div class="credibility-value" data-en="Ex-Facebook/Meta Specialist, Singapore" data-ko="전 페이스북/메타 전문가, 싱가포르">Ex-Facebook/Meta Specialist, Singapore</div>
         </div>
         <div class="credibility-card">
           <div class="credibility-icon">
@@ -114,7 +108,7 @@
               <path d="M2.33 2.33H25.67V25.67H2.33V2.33Z" stroke="white" stroke-width="2.33"/>
             </svg>
           </div>
-          <div class="credibility-label">Ad Spend Managed</div>
+          <div class="credibility-label" data-en="Ad Spend Managed" data-ko="관리 광고 예산">Ad Spend Managed</div>
           <div class="credibility-value">₩12+ Billion</div>
         </div>
         <div class="credibility-card">
@@ -126,8 +120,8 @@
               <circle cx="14" cy="14" r="1.17" fill="white"/>
             </svg>
           </div>
-          <div class="credibility-label">Campaign Success Rate</div>
-          <div class="credibility-value">94% Client Retention</div>
+          <div class="credibility-label" data-en="Campaign Success Rate" data-ko="캠페인 성공률">Campaign Success Rate</div>
+          <div class="credibility-value" data-en="94% Client Retention" data-ko="94% 고객 유지율">94% Client Retention</div>
         </div>
       </div>
 
@@ -135,19 +129,19 @@
         <div class="credibility-stats-grid">
           <div class="credibility-stat">
             <div class="credibility-stat-value">500+</div>
-            <div class="credibility-stat-label">Campaigns Launched</div>
+            <div class="credibility-stat-label" data-en="Campaigns Launched" data-ko="시작한 캠페인">Campaigns Launched</div>
           </div>
           <div class="credibility-stat">
             <div class="credibility-stat-value">150+</div>
-            <div class="credibility-stat-label">Clients Worldwide</div>
+            <div class="credibility-stat-label" data-en="Clients Worldwide" data-ko="전 세계 고객">Clients Worldwide</div>
           </div>
           <div class="credibility-stat">
             <div class="credibility-stat-value">432%</div>
-            <div class="credibility-stat-label">Average ROAS</div>
+            <div class="credibility-stat-label" data-en="Average ROAS" data-ko="평균 ROAS">Average ROAS</div>
           </div>
           <div class="credibility-stat">
             <div class="credibility-stat-value">₩12B+</div>
-            <div class="credibility-stat-label">Total Ad Spend</div>
+            <div class="credibility-stat-label" data-en="Total Ad Spend" data-ko="총 광고 예산">Total Ad Spend</div>
           </div>
         </div>
       </div>
@@ -158,10 +152,8 @@
   <section class="trusted-clients">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Trusted Clients</h2>
-        <p class="section-description">
-          Partnering with leading brands to drive exceptional results
-        </p>
+        <h2 class="section-title" data-en="Trusted Clients" data-ko="신뢰받는 고객사">Trusted Clients</h2>
+        <p class="section-description" data-en="Partnering with leading brands to drive exceptional results" data-ko="선도 브랜드와 협력하여 탁월한 결과를 창출합니다">Partnering with leading brands to drive exceptional results</p>
           </div>
       <div class="clients-image-wrapper">
         <img src="clientphoto.png" alt="Trusted Client Logos" class="clients-image" width="1024" height="124">
@@ -173,10 +165,8 @@
   <section class="services section" id="services">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Comprehensive Meta Marketing Services</h2>
-        <p class="section-description">
-          Full-service Meta advertising solutions covering strategy, execution, and optimization
-        </p>
+        <h2 class="section-title" data-en="Comprehensive Meta Marketing Services" data-ko="포괄적인 메타 마케팅 서비스">Comprehensive Meta Marketing Services</h2>
+        <p class="section-description" data-en="Full-service Meta advertising solutions covering strategy, execution, and optimization" data-ko="전략, 실행, 최적화를 포함한 풀서비스 메타 광고 솔루션">Full-service Meta advertising solutions covering strategy, execution, and optimization</p>
       </div>
 
       <div class="services-grid">
@@ -190,13 +180,13 @@
               <path d="M24 12L28 8L24 12L28 16L24 12Z" fill="white"/>
             </svg>
           </div>
-          <h3>Campaign Strategy & Setup</h3>
-          <p>Custom Meta advertising strategies aligned with your business objectives, audience insights, and competitive landscape.</p>
+          <h3 data-en="Campaign Strategy & Setup" data-ko="캠페인 전략 및 설정">Campaign Strategy & Setup</h3>
+          <p data-en="Custom Meta advertising strategies aligned with your business objectives, audience insights, and competitive landscape." data-ko="비즈니스 목표, 고객 인사이트, 경쟁 환경에 맞춘 맞춤형 메타 광고 전략">Custom Meta advertising strategies aligned with your business objectives, audience insights, and competitive landscape.</p>
           <div class="service-features">
-            <div class="service-feature">Audience Research</div>
-            <div class="service-feature">Competitor Analysis</div>
-            <div class="service-feature">Campaign Architecture</div>
-            <div class="service-feature">Pixel Implementation</div>
+            <div class="service-feature" data-en="Audience Research" data-ko="고객 조사">Audience Research</div>
+            <div class="service-feature" data-en="Competitor Analysis" data-ko="경쟁사 분석">Competitor Analysis</div>
+            <div class="service-feature" data-en="Campaign Architecture" data-ko="캠페인 아키텍처">Campaign Architecture</div>
+            <div class="service-feature" data-en="Pixel Implementation" data-ko="픽셀 구현">Pixel Implementation</div>
           </div>
         </div>
         <div class="service-card">
@@ -205,13 +195,13 @@
               <path d="M17 2L8 18H16L15 30L24 14H16L17 2Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </div>
-          <h3>Performance Optimization</h3>
-          <p>Continuous A/B testing and data analysis to maximize ROAS and minimize cost per acquisition.</p>
+          <h3 data-en="Performance Optimization" data-ko="성과 최적화">Performance Optimization</h3>
+          <p data-en="Continuous A/B testing and data analysis to maximize ROAS and minimize cost per acquisition." data-ko="ROAS를 극대화하고 획득당 비용을 최소화하기 위한 지속적인 A/B 테스트 및 데이터 분석">Continuous A/B testing and data analysis to maximize ROAS and minimize cost per acquisition.</p>
           <div class="service-features">
-            <div class="service-feature">Creative Testing</div>
-            <div class="service-feature">Bid Optimization</div>
-            <div class="service-feature">Audience Refinement</div>
-            <div class="service-feature">Budget Allocation</div>
+            <div class="service-feature" data-en="Creative Testing" data-ko="크리에이티브 테스트">Creative Testing</div>
+            <div class="service-feature" data-en="Bid Optimization" data-ko="입찰 최적화">Bid Optimization</div>
+            <div class="service-feature" data-en="Audience Refinement" data-ko="고객 세분화">Audience Refinement</div>
+            <div class="service-feature" data-en="Budget Allocation" data-ko="예산 배분">Budget Allocation</div>
           </div>
         </div>
         <div class="service-card">
@@ -223,13 +213,13 @@
               <circle cx="16" cy="16" r="1.5" fill="#EF4444"/>
             </svg>
           </div>
-          <h3>Conversion Rate Optimization</h3>
-          <p>Landing page optimization and conversion funnel analysis to turn clicks into customers.</p>
+          <h3 data-en="Conversion Rate Optimization" data-ko="전환율 최적화">Conversion Rate Optimization</h3>
+          <p data-en="Landing page optimization and conversion funnel analysis to turn clicks into customers." data-ko="클릭을 고객으로 전환하기 위한 랜딩 페이지 최적화 및 전환 퍼널 분석">Landing page optimization and conversion funnel analysis to turn clicks into customers.</p>
           <div class="service-features">
-            <div class="service-feature">Funnel Analysis</div>
-            <div class="service-feature">Landing Page Testing</div>
-            <div class="service-feature">Form Optimization</div>
-            <div class="service-feature">Checkout Flow</div>
+            <div class="service-feature" data-en="Funnel Analysis" data-ko="퍼널 분석">Funnel Analysis</div>
+            <div class="service-feature" data-en="Landing Page Testing" data-ko="랜딩 페이지 테스트">Landing Page Testing</div>
+            <div class="service-feature" data-en="Form Optimization" data-ko="폼 최적화">Form Optimization</div>
+            <div class="service-feature" data-en="Checkout Flow" data-ko="결제 프로세스">Checkout Flow</div>
           </div>
         </div>
       </div>
@@ -246,13 +236,13 @@
               <path d="M16 25C16 20.5 18.5 18 21 18" stroke="white" stroke-width="2" stroke-linecap="round"/>
             </svg>
           </div>
-          <h3>Audience Development</h3>
-          <p>Advanced audience segmentation and lookalike modeling to reach your ideal customers.</p>
+          <h3 data-en="Audience Development" data-ko="고객 개발">Audience Development</h3>
+          <p data-en="Advanced audience segmentation and lookalike modeling to reach your ideal customers." data-ko="이상적인 고객에 도달하기 위한 고급 고객 세분화 및 유사 고객 모델링">Advanced audience segmentation and lookalike modeling to reach your ideal customers.</p>
           <div class="service-features">
-            <div class="service-feature">Custom Audiences</div>
-            <div class="service-feature">Lookalike Modeling</div>
-            <div class="service-feature">Interest Targeting</div>
-            <div class="service-feature">Retargeting Campaigns</div>
+            <div class="service-feature" data-en="Custom Audiences" data-ko="맞춤형 고객">Custom Audiences</div>
+            <div class="service-feature" data-en="Lookalike Modeling" data-ko="유사 고객 모델링">Lookalike Modeling</div>
+            <div class="service-feature" data-en="Interest Targeting" data-ko="관심사 타겟팅">Interest Targeting</div>
+            <div class="service-feature" data-en="Retargeting Campaigns" data-ko="리타겟팅 캠페인">Retargeting Campaigns</div>
           </div>
         </div>
         <div class="service-card">
@@ -264,13 +254,13 @@
               <path d="M4 4H8L10 12" stroke="white" stroke-width="2" stroke-linecap="round"/>
             </svg>
           </div>
-          <h3>E-Commerce Campaigns</h3>
-          <p>Specialized strategies for online stores including dynamic product ads and catalog optimization.</p>
+          <h3 data-en="E-Commerce Campaigns" data-ko="이커머스 캠페인">E-Commerce Campaigns</h3>
+          <p data-en="Specialized strategies for online stores including dynamic product ads and catalog optimization." data-ko="동적 제품 광고 및 카탈로그 최적화를 포함한 온라인 스토어 전용 전략">Specialized strategies for online stores including dynamic product ads and catalog optimization.</p>
           <div class="service-features">
-            <div class="service-feature">Product Catalog Setup</div>
-            <div class="service-feature">Dynamic Ads</div>
-            <div class="service-feature">Collection Ads</div>
-            <div class="service-feature">Shopping Features</div>
+            <div class="service-feature" data-en="Product Catalog Setup" data-ko="제품 카탈로그 설정">Product Catalog Setup</div>
+            <div class="service-feature" data-en="Dynamic Ads" data-ko="동적 광고">Dynamic Ads</div>
+            <div class="service-feature" data-en="Collection Ads" data-ko="컬렉션 광고">Collection Ads</div>
+            <div class="service-feature" data-en="Shopping Features" data-ko="쇼핑 기능">Shopping Features</div>
           </div>
         </div>
         <div class="service-card">
@@ -287,13 +277,13 @@
               <path d="M14 22H18" stroke="white" stroke-width="2" stroke-linecap="round"/>
             </svg>
           </div>
-          <h3>Mobile App Marketing</h3>
-          <p>App install campaigns and re-engagement strategies to grow your mobile user base.</p>
+          <h3 data-en="Mobile App Marketing" data-ko="모바일 앱 마케팅">Mobile App Marketing</h3>
+          <p data-en="App install campaigns and re-engagement strategies to grow your mobile user base." data-ko="모바일 사용자 기반을 성장시키기 위한 앱 설치 캠페인 및 재참여 전략">App install campaigns and re-engagement strategies to grow your mobile user base.</p>
           <div class="service-features">
-            <div class="service-feature">App Install Campaigns</div>
-            <div class="service-feature">Deep Linking</div>
-            <div class="service-feature">In-App Events</div>
-            <div class="service-feature">User Retention</div>
+            <div class="service-feature" data-en="App Install Campaigns" data-ko="앱 설치 캠페인">App Install Campaigns</div>
+            <div class="service-feature" data-en="Deep Linking" data-ko="딥 링킹">Deep Linking</div>
+            <div class="service-feature" data-en="In-App Events" data-ko="인앱 이벤트">In-App Events</div>
+            <div class="service-feature" data-en="User Retention" data-ko="사용자 유지">User Retention</div>
           </div>
         </div>
       </div>
@@ -304,10 +294,8 @@
   <section class="process section">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">From Idea to Results</h2>
-        <p class="section-description">
-          We move fast. Most campaigns are live within weeks, not months.
-        </p>
+        <h2 class="section-title" data-en="From Idea to Results" data-ko="아이디어에서 결과까지">From Idea to Results</h2>
+        <p class="section-description" data-en="We move fast. Most campaigns are live within weeks, not months." data-ko="빠르게 진행합니다. 대부분의 캠페인은 몇 달이 아닌 몇 주 내에 시작됩니다">We move fast. Most campaigns are live within weeks, not months.</p>
       </div>
 
       <div class="process-grid">
@@ -321,8 +309,8 @@
               </svg>
             </div>
           </div>
-          <h3>Discovery</h3>
-          <p>Define machine learning plan, identify key business questions, test hypotheses.</p>
+          <h3 data-en="Discovery" data-ko="발견">Discovery</h3>
+          <p data-en="Define machine learning plan, identify key business questions, test hypotheses." data-ko="머신러닝 계획 수립, 핵심 비즈니스 질문 식별, 가설 테스트">Define machine learning plan, identify key business questions, test hypotheses.</p>
           <div class="process-connector"></div>
         </div>
         <div class="process-step">
@@ -340,8 +328,8 @@
               </svg>
             </div>
           </div>
-          <h3>Creative</h3>
-          <p>Produce diverse creatives based on concept and format to maximize testing.</p>
+          <h3 data-en="Creative" data-ko="크리에이티브">Creative</h3>
+          <p data-en="Produce diverse creatives based on concept and format to maximize testing." data-ko="테스트를 극대화하기 위해 컨셉과 형식에 기반한 다양한 크리에이티브 제작">Produce diverse creatives based on concept and format to maximize testing.</p>
           <div class="process-connector"></div>
         </div>
         <div class="process-step">
@@ -358,8 +346,8 @@
               </svg>
             </div>
           </div>
-          <h3>Launch</h3>
-          <p>Deploy Advantage+ campaigns, minimize changes during learning phase.</p>
+          <h3 data-en="Launch" data-ko="런칭">Launch</h3>
+          <p data-en="Deploy Advantage+ campaigns, minimize changes during learning phase." data-ko="Advantage+ 캠페인 배포, 학습 단계 중 변경 최소화">Deploy Advantage+ campaigns, minimize changes during learning phase.</p>
           <div class="process-connector"></div>
         </div>
         <div class="process-step">
@@ -376,8 +364,8 @@
               </svg>
             </div>
           </div>
-          <h3>Scale</h3>
-          <p>Leverage catalog ads for retargeting, match products to churned customers.</p>
+          <h3 data-en="Scale" data-ko="확장">Scale</h3>
+          <p data-en="Leverage catalog ads for retargeting, match products to churned customers." data-ko="리타겟팅을 위한 카탈로그 광고 활용, 이탈 고객에게 제품 매칭">Leverage catalog ads for retargeting, match products to churned customers.</p>
         </div>
       </div>
     </div>
@@ -387,10 +375,8 @@
   <section class="case-studies section" id="case-studies">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Real Results, Real Impact</h2>
-        <p class="section-description">
-          See how data-driven optimization transformed our clients' Meta advertising performance
-        </p>
+        <h2 class="section-title" data-en="Real Results, Real Impact" data-ko="실제 결과, 실제 영향">Real Results, Real Impact</h2>
+        <p class="section-description" data-en="See how data-driven optimization transformed our clients' Meta advertising performance" data-ko="데이터 기반 최적화가 고객의 메타 광고 성과를 어떻게 변화시켰는지 확인하세요">See how data-driven optimization transformed our clients' Meta advertising performance</p>
       </div>
 
       <div class="case-studies-grid">
@@ -412,19 +398,19 @@
           <div class="case-study-comparison">
             <div class="comparison-column before">
               <div class="comparison-column-header">
-                <span>Before</span>
+                <span data-en="Before" data-ko="이전">Before</span>
               </div>
               <div class="comparison-metrics">
                 <div class="comparison-metric">
-                  <span class="comparison-metric-label">roas:</span>
+                  <span class="comparison-metric-label" data-en="roas:" data-ko="roas:">roas:</span>
                   <span class="comparison-metric-value">1.8x</span>
                 </div>
                 <div class="comparison-metric">
-                  <span class="comparison-metric-label">cpa:</span>
+                  <span class="comparison-metric-label" data-en="cpa:" data-ko="cpa:">cpa:</span>
                   <span class="comparison-metric-value">₩45,000</span>
                 </div>
                 <div class="comparison-metric">
-                  <span class="comparison-metric-label">conversion:</span>
+                  <span class="comparison-metric-label" data-en="conversion:" data-ko="전환율:">conversion:</span>
                   <span class="comparison-metric-value">1.2%</span>
                 </div>
               </div>
@@ -445,19 +431,19 @@
             </div>
             <div class="comparison-column after">
               <div class="comparison-column-header">
-                <span>After</span>
+                <span data-en="After" data-ko="이후">After</span>
               </div>
               <div class="comparison-metrics">
                 <div class="comparison-metric">
-                  <span class="comparison-metric-label">roas:</span>
+                  <span class="comparison-metric-label" data-en="roas:" data-ko="roas:">roas:</span>
                   <span class="comparison-metric-value">5.4x</span>
                 </div>
                 <div class="comparison-metric">
-                  <span class="comparison-metric-label">cpa:</span>
+                  <span class="comparison-metric-label" data-en="cpa:" data-ko="cpa:">cpa:</span>
                   <span class="comparison-metric-value">₩18,000</span>
                 </div>
                 <div class="comparison-metric">
-                  <span class="comparison-metric-label">conversion:</span>
+                  <span class="comparison-metric-label" data-en="conversion:" data-ko="전환율:">conversion:</span>
                   <span class="comparison-metric-value">4.8%</span>
                 </div>
               </div>
@@ -469,15 +455,15 @@
         <div class="case-study-card">
           <div class="case-study-header">
             <div>
-              <h3 class="case-study-title">B2B SaaS Platform</h3>
+              <h3 class="case-study-title" data-en="B2B SaaS Platform" data-ko="B2B SaaS 플랫폼">B2B SaaS Platform</h3>
               <div class="case-study-meta">
-                <span>Technology</span>
+                <span data-en="Technology" data-ko="기술">Technology</span>
                 <span>•</span>
-                <span>4 months campaign</span>
+                <span data-en="4 months campaign" data-ko="4개월 캠페인">4 months campaign</span>
               </div>
             </div>
             <div class="case-study-challenge">
-              <strong>Challenge:</strong> Low lead quality, poor targeting
+              <strong data-en="Challenge:" data-ko="과제:">Challenge:</strong> <span data-en="Low lead quality, poor targeting" data-ko="낮은 리드 품질, 부정확한 타겟팅">Low lead quality, poor targeting</span>
             </div>
           </div>
           <div class="case-study-comparison">
@@ -487,15 +473,15 @@
               </div>
               <div class="comparison-metrics">
                 <div class="comparison-metric">
-                  <span class="comparison-metric-label">leads:</span>
+                  <span class="comparison-metric-label" data-en="leads:" data-ko="리드:">leads:</span>
                   <span class="comparison-metric-value">120/mo</span>
                 </div>
                 <div class="comparison-metric">
-                  <span class="comparison-metric-label">cpl:</span>
+                  <span class="comparison-metric-label" data-en="cpl:" data-ko="cpl:">cpl:</span>
                   <span class="comparison-metric-value">₩85,000</span>
                 </div>
                 <div class="comparison-metric">
-                  <span class="comparison-metric-label">qualified:</span>
+                  <span class="comparison-metric-label" data-en="qualified:" data-ko="적격:">qualified:</span>
                   <span class="comparison-metric-value">15%</span>
                 </div>
               </div>
@@ -516,19 +502,19 @@
             </div>
             <div class="comparison-column after">
               <div class="comparison-column-header">
-                <span>After</span>
+                <span data-en="After" data-ko="이후">After</span>
               </div>
               <div class="comparison-metrics">
                 <div class="comparison-metric">
-                  <span class="comparison-metric-label">leads:</span>
+                  <span class="comparison-metric-label" data-en="leads:" data-ko="리드:">leads:</span>
                   <span class="comparison-metric-value">480/mo</span>
                 </div>
                 <div class="comparison-metric">
-                  <span class="comparison-metric-label">cpl:</span>
+                  <span class="comparison-metric-label" data-en="cpl:" data-ko="cpl:">cpl:</span>
                   <span class="comparison-metric-value">₩42,000</span>
                 </div>
                 <div class="comparison-metric">
-                  <span class="comparison-metric-label">qualified:</span>
+                  <span class="comparison-metric-label" data-en="qualified:" data-ko="적격:">qualified:</span>
                   <span class="comparison-metric-value">68%</span>
                 </div>
               </div>
@@ -540,33 +526,33 @@
         <div class="case-study-card">
           <div class="case-study-header">
             <div>
-              <h3 class="case-study-title">Health & Wellness App</h3>
+              <h3 class="case-study-title" data-en="Health & Wellness App" data-ko="건강 및 웰니스 앱">Health & Wellness App</h3>
               <div class="case-study-meta">
-                <span>Mobile Apps</span>
+                <span data-en="Mobile Apps" data-ko="모바일 앱">Mobile Apps</span>
                 <span>•</span>
-                <span>5 months campaign</span>
+                <span data-en="5 months campaign" data-ko="5개월 캠페인">5 months campaign</span>
               </div>
             </div>
             <div class="case-study-challenge">
-              <strong>Challenge:</strong> Declining user acquisition, high CAC
+              <strong data-en="Challenge:" data-ko="과제:">Challenge:</strong> <span data-en="Declining user acquisition, high CAC" data-ko="사용자 획득 감소, 높은 CAC">Declining user acquisition, high CAC</span>
             </div>
           </div>
           <div class="case-study-comparison">
             <div class="comparison-column before">
               <div class="comparison-column-header">
-                <span>Before</span>
+                <span data-en="Before" data-ko="이전">Before</span>
               </div>
               <div class="comparison-metrics">
                 <div class="comparison-metric">
-                  <span class="comparison-metric-label">installs:</span>
+                  <span class="comparison-metric-label" data-en="installs:" data-ko="설치:">installs:</span>
                   <span class="comparison-metric-value">2.5K/mo</span>
                 </div>
                 <div class="comparison-metric">
-                  <span class="comparison-metric-label">cac:</span>
+                  <span class="comparison-metric-label" data-en="cac:" data-ko="cac:">cac:</span>
                   <span class="comparison-metric-value">₩12,500</span>
                 </div>
                 <div class="comparison-metric">
-                  <span class="comparison-metric-label">retention:</span>
+                  <span class="comparison-metric-label" data-en="retention:" data-ko="유지율:">retention:</span>
                   <span class="comparison-metric-value">22%</span>
                 </div>
               </div>
@@ -587,19 +573,19 @@
     </div>
             <div class="comparison-column after">
               <div class="comparison-column-header">
-                <span>After</span>
+                <span data-en="After" data-ko="이후">After</span>
               </div>
               <div class="comparison-metrics">
                 <div class="comparison-metric">
-                  <span class="comparison-metric-label">installs:</span>
+                  <span class="comparison-metric-label" data-en="installs:" data-ko="설치:">installs:</span>
                   <span class="comparison-metric-value">18K/mo</span>
                 </div>
                 <div class="comparison-metric">
-                  <span class="comparison-metric-label">cac:</span>
+                  <span class="comparison-metric-label" data-en="cac:" data-ko="cac:">cac:</span>
                   <span class="comparison-metric-value">₩6,200</span>
                 </div>
                 <div class="comparison-metric">
-                  <span class="comparison-metric-label">retention:</span>
+                  <span class="comparison-metric-label" data-en="retention:" data-ko="유지율:">retention:</span>
                   <span class="comparison-metric-value">58%</span>
                 </div>
         </div>
@@ -609,7 +595,7 @@
       </div>
 
       <div class="case-study-cta">
-        <a href="#contact" class="btn-primary">Book Your Strategy Call</a>
+        <a href="#contact" class="btn-primary" data-en="Book Your Strategy Call" data-ko="전략 상담 예약">Book Your Strategy Call</a>
       </div>
     </div>
   </section>
@@ -618,50 +604,48 @@
   <section class="contact section" id="contact">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Book Your Free Strategy Call</h2>
-        <p class="section-description">
-          Let's discuss how we can help you achieve exceptional results with data-driven Meta advertising
-        </p>
+        <h2 class="section-title" data-en="Book Your Free Strategy Call" data-ko="무료 전략 상담 예약">Book Your Free Strategy Call</h2>
+        <p class="section-description" data-en="Let's discuss how we can help you achieve exceptional results with data-driven Meta advertising" data-ko="데이터 기반 메타 광고로 탁월한 결과를 달성하는 방법을 논의해보세요">Let's discuss how we can help you achieve exceptional results with data-driven Meta advertising</p>
       </div>
 
       <div class="contact-grid">
         <form class="contact-form">
-          <h3>Schedule Your Free Consultation</h3>
+          <h3 data-en="Schedule Your Free Consultation" data-ko="무료 상담 일정 잡기">Schedule Your Free Consultation</h3>
           <div class="form-group">
-            <label class="form-label">Full Name *</label>
-            <input type="text" class="form-input" placeholder="John Smith" required>
+            <label class="form-label" data-en="Full Name *" data-ko="성명 *">Full Name *</label>
+            <input type="text" class="form-input" data-en-placeholder="John Smith" data-ko-placeholder="홍길동" placeholder="John Smith" required>
           </div>
           <div class="form-group">
-            <label class="form-label">Email Address *</label>
-            <input type="email" class="form-input" placeholder="john@company.com" required>
+            <label class="form-label" data-en="Email Address *" data-ko="이메일 주소 *">Email Address *</label>
+            <input type="email" class="form-input" data-en-placeholder="john@company.com" data-ko-placeholder="hong@company.com" placeholder="john@company.com" required>
           </div>
           <div class="form-group">
-            <label class="form-label">Company Name</label>
-            <input type="text" class="form-input" placeholder="Your Company">
+            <label class="form-label" data-en="Company Name" data-ko="회사명">Company Name</label>
+            <input type="text" class="form-input" data-en-placeholder="Your Company" data-ko-placeholder="회사명" placeholder="Your Company">
           </div>
           <div class="form-group">
-            <label class="form-label">Monthly Ad Budget</label>
+            <label class="form-label" data-en="Monthly Ad Budget" data-ko="월 광고 예산">Monthly Ad Budget</label>
             <select class="form-select">
-              <option>Select budget range</option>
-              <option>Under ₩5M</option>
-              <option>₩5M - ₩10M</option>
-              <option>₩10M - ₩30M</option>
-              <option>₩30M - ₩50M</option>
-              <option>Over ₩50M</option>
+              <option data-en="Select budget range" data-ko="예산 범위 선택">Select budget range</option>
+              <option data-en="Under ₩5M" data-ko="₩5백만원 미만">Under ₩5M</option>
+              <option data-en="₩5M - ₩10M" data-ko="₩5백만원 - ₩1천만원">₩5M - ₩10M</option>
+              <option data-en="₩10M - ₩30M" data-ko="₩1천만원 - ₩3천만원">₩10M - ₩30M</option>
+              <option data-en="₩30M - ₩50M" data-ko="₩3천만원 - ₩5천만원">₩30M - ₩50M</option>
+              <option data-en="Over ₩50M" data-ko="₩5천만원 이상">Over ₩50M</option>
             </select>
           </div>
           <div class="form-group">
-            <label class="form-label">Project Details *</label>
-            <textarea class="form-textarea" placeholder="Tell us about your goals and current challenges..." required></textarea>
+            <label class="form-label" data-en="Project Details *" data-ko="프로젝트 상세 *">Project Details *</label>
+            <textarea class="form-textarea" data-en-placeholder="Tell us about your goals and current challenges..." data-ko-placeholder="목표와 현재 과제에 대해 알려주세요..." placeholder="Tell us about your goals and current challenges..." required></textarea>
           </div>
-          <button type="submit" class="form-submit">Book My Call Now</button>
+          <button type="submit" class="form-submit" data-en="Book My Call Now" data-ko="상담 예약하기">Book My Call Now</button>
         </form>
 
         <div class="contact-info">
           <div class="contact-info-card">
             <div class="contact-info-icon">💬</div>
-            <h4>Quick Response Time</h4>
-            <p>We respond to all inquiries within 24 hours. Get expert advice on your Meta advertising strategy.</p>
+            <h4 data-en="Quick Response Time" data-ko="빠른 응답 시간">Quick Response Time</h4>
+            <p data-en="We respond to all inquiries within 24 hours. Get expert advice on your Meta advertising strategy." data-ko="모든 문의에 24시간 이내로 응답합니다. 메타 광고 전략에 대한 전문가 조언을 받으세요.">We respond to all inquiries within 24 hours. Get expert advice on your Meta advertising strategy.</p>
             <div class="contact-info-links">
               <a href="mailto:yl.ideaflow@gmail.com" class="contact-info-link">yl.ideaflow@gmail.com</a>
               <a href="tel:+821099603456" class="contact-info-link">+82 10 9960 3456</a>
@@ -670,20 +654,20 @@
 
           <div class="contact-info-card highlight">
             <div class="contact-info-icon">📊</div>
-            <h4>Free Campaign Audit</h4>
-            <p>Get a complimentary analysis of your current Meta campaigns and discover optimization opportunities.</p>
+            <h4 data-en="Free Campaign Audit" data-ko="무료 캠페인 감사">Free Campaign Audit</h4>
+            <p data-en="Get a complimentary analysis of your current Meta campaigns and discover optimization opportunities." data-ko="현재 메타 캠페인의 무료 분석을 받고 최적화 기회를 발견하세요.">Get a complimentary analysis of your current Meta campaigns and discover optimization opportunities.</p>
             <div class="contact-info-list">
-              <div class="contact-info-list-item">Performance Analysis</div>
-              <div class="contact-info-list-item">Optimization Recommendations</div>
-              <div class="contact-info-list-item">Growth Strategy</div>
+              <div class="contact-info-list-item" data-en="Performance Analysis" data-ko="성과 분석">Performance Analysis</div>
+              <div class="contact-info-list-item" data-en="Optimization Recommendations" data-ko="최적화 권장사항">Optimization Recommendations</div>
+              <div class="contact-info-list-item" data-en="Growth Strategy" data-ko="성장 전략">Growth Strategy</div>
             </div>
         </div>
 
           <div class="contact-info-card">
             <div class="contact-security">
               <div class="contact-security-icon">🔒</div>
-              <h4>Your Data is Secure</h4>
-              <p>All information is confidential and protected. We respect your privacy and will never share your details.</p>
+              <h4 data-en="Your Data is Secure" data-ko="데이터 보안">Your Data is Secure</h4>
+              <p data-en="All information is confidential and protected. We respect your privacy and will never share your details." data-ko="모든 정보는 기밀로 보호됩니다. 귀하의 개인정보를 존중하며 절대 공유하지 않습니다.">All information is confidential and protected. We respect your privacy and will never share your details.</p>
         </div>
         </div>
         </div>
@@ -699,9 +683,7 @@
           <div class="footer-logo">
             <div class="footer-logo-text">idea flow</div>
           </div>
-          <p class="footer-description">
-            Meta-Certified Performance Marketing Agency. Transform your social media advertising with data-driven strategies.
-          </p>
+          <p class="footer-description" data-en="Meta-Certified Performance Marketing Agency. Transform your social media advertising with data-driven strategies." data-ko="메타 공인 성과 마케팅 에이전시. 데이터 기반 전략으로 소셜 미디어 광고를 혁신하세요.">Meta-Certified Performance Marketing Agency. Transform your social media advertising with data-driven strategies.</p>
           <div class="footer-social">
             <a href="#" class="footer-social-link">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -739,28 +721,28 @@
         </div>
 
         <div class="footer-column">
-          <h4>Services</h4>
+          <h4 data-en="Services" data-ko="서비스">Services</h4>
           <div class="footer-links">
-            <a href="#services" class="footer-link">Campaign Strategy</a>
-            <a href="#services" class="footer-link">Performance Optimization</a>
-            <a href="#services" class="footer-link">Conversion Optimization</a>
-            <a href="#services" class="footer-link">Audience Development</a>
-            <a href="#services" class="footer-link">E-Commerce Campaigns</a>
+            <a href="#services" class="footer-link" data-en="Campaign Strategy" data-ko="캠페인 전략">Campaign Strategy</a>
+            <a href="#services" class="footer-link" data-en="Performance Optimization" data-ko="성과 최적화">Performance Optimization</a>
+            <a href="#services" class="footer-link" data-en="Conversion Optimization" data-ko="전환율 최적화">Conversion Optimization</a>
+            <a href="#services" class="footer-link" data-en="Audience Development" data-ko="고객 개발">Audience Development</a>
+            <a href="#services" class="footer-link" data-en="E-Commerce Campaigns" data-ko="이커머스 캠페인">E-Commerce Campaigns</a>
           </div>
         </div>
 
         <div class="footer-column">
-          <h4>Company</h4>
+          <h4 data-en="Company" data-ko="회사">Company</h4>
           <div class="footer-links">
-            <a href="#case-studies" class="footer-link">Case Studies</a>
-            <a href="#services" class="footer-link">Our Services</a>
-            <a href="#contact" class="footer-link">Contact Us</a>
-            <a href="#contact" class="footer-link">Free Audit</a>
+            <a href="#case-studies" class="footer-link" data-en="Case Studies" data-ko="사례 연구">Case Studies</a>
+            <a href="#services" class="footer-link" data-en="Our Services" data-ko="우리 서비스">Our Services</a>
+            <a href="#contact" class="footer-link" data-en="Contact Us" data-ko="문의하기">Contact Us</a>
+            <a href="#contact" class="footer-link" data-en="Free Audit" data-ko="무료 감사">Free Audit</a>
           </div>
         </div>
 
         <div class="footer-column">
-          <h4>Get In Touch</h4>
+          <h4 data-en="Get In Touch" data-ko="연락하기">Get In Touch</h4>
           <div class="footer-links">
             <div class="footer-contact-item">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -790,16 +772,14 @@
             </div>
             <div class="footer-badge">
               <span>•</span>
-              <span>Meta Business Partner</span>
+              <span data-en="Meta Business Partner" data-ko="메타 비즈니스 파트너">Meta Business Partner</span>
             </div>
           </div>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <p class="footer-copyright">
-          © 2025 idea flow. All rights reserved. Meta-Certified Marketing Partner.
-        </p>
+        <p class="footer-copyright" data-en="© 2025 idea flow. All rights reserved. Meta-Certified Marketing Partner." data-ko="© 2025 idea flow. 모든 권리 보유. 메타 공인 마케팅 파트너.">© 2025 idea flow. All rights reserved. Meta-Certified Marketing Partner.</p>
       </div>
     </div>
   </footer>
@@ -815,19 +795,37 @@
     }
     
     function updateLanguage() {
-      const langText = document.querySelector('.lang-text');
-      if (langText) {
-        langText.textContent = currentLang === 'en' ? 'EN' : 'KR';
+      const langToggle = document.querySelector('.lang-toggle');
+      if (langToggle) {
+        // Add/remove 'active' class based on language (active = Korean)
+        if (currentLang === 'ko') {
+          langToggle.classList.add('active');
+        } else {
+          langToggle.classList.remove('active');
+        }
       }
       
       // Update elements with data-en and data-ko attributes
       document.querySelectorAll('[data-en][data-ko]').forEach(el => {
+        // Skip the hero h1 heading - keep it in English always
+        if (el.closest('.hero') && el.tagName === 'H1') {
+          return;
+        }
+        
         const text = el.getAttribute('data-' + currentLang);
         if (text) {
           if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-            el.placeholder = text;
+            // Handle placeholder attributes
+            const placeholderAttr = el.getAttribute('data-' + currentLang + '-placeholder');
+            if (placeholderAttr) {
+              el.placeholder = placeholderAttr;
+            } else {
+              el.placeholder = text;
+            }
+          } else if (el.tagName === 'OPTION') {
+            el.textContent = text;
           } else {
-            el.innerHTML = text;
+            el.textContent = text;
           }
         }
       });
